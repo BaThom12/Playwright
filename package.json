@@ -1,0 +1,34 @@
+{
+  "name": "playwright-sample",
+  "version": "1.0.0",
+  "description": "Playwright automation framework skeleton with Typescript.",
+  "scripts": {
+    "test": "playwright test",
+    "run": "playwright test --headed",
+    "debug": "playwright test --debug",
+    "report": "playwright test --reporter=dot",
+    "test:firefox": "playwright test --project=firefox",
+    "test:chromium": "playwright test --project=chromium",
+    "test:safari": "playwright test --project=webkit",
+    "run:firefox": "playwright test --headed --project=firefox",
+    "run:chromium": "playwright test --headed --project=chromium",
+    "run:safari": "playwright test --headed --project=webkit"
+  },
+  "keywords": [
+    "playwright",
+    "test",
+    "automation",
+    "typescript",
+    "framework"
+  ],
+  "author": "Vikash Chauhan",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/randomstring": "^1.1.11",
+    "winston": "^3.7.2"
+  },
+  "dependencies": {
+    "randomstring": "^1.3.0"
+  }
+}
