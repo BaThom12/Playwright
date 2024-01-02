@@ -1,24 +1,40 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { PageBase } from '@pages/page-base';
-import { elementLocatorHomePage,variableHomePage } from '@interfaces/homepageUI';
-export class HomePage extends PageBase {
+import { elementLocatorProduct,variableProduct } from '@interfaces/productUI';
+export class Product extends PageBase {
 
     constructor(page: Page) {
         super(page);
     }
-    async open() {
-        await this.page.goto(elementLocatorHomePage.url);
-        this.logger.info('Navigate to url http://automationexercise.com');
+    async navigateAllProduct() {
+       // await this.page.getByRole('link', { name: elementLocatorProduct.hplProduct }).click();
+        await this.page.getByText('Products').click();
+        this.logger.info("Click on 'Products' button");
+        expect(await this.page.title()).toBe(variableProduct.titleAllProduct);
+        this.logger.info("Verify user is navigated to ALL PRODUCTS page successfully");
+        expect(await this.page.getByText(variableProduct.lblAllProduct)).toBeVisible();
+        this.logger.info("The products list is visible");
+        
+
     }
 
-    async verifyTitle() {
-        expect(await this.page.title()).toBe(variableHomePage.title);
-        this.logger.info('Verify that home page is visible successfully');
+    async viewDetailProduct() {
+        await this.page.locator(elementLocatorProduct.btnViewProduct1).click();
+        this.logger.info("Click on 'View Product' of first product");
+        expect(await this.page.getByText(variableProduct.lblNameProduct1)).toBeVisible();
+        expect(await this.page.getByText(variableProduct.lblCategoryProduct1)).toBeVisible();
+        expect(await this.page.getByText(variableProduct.lblPriceProduct1)).toBeVisible();
+        expect(await this.page.getByText(variableProduct.lblAvailabilityProduct1)).toBeVisible();
+        expect(await this.page.getByText(variableProduct.lblConditionProduct1)).toBeVisible();
+        expect(await this.page.getByText(variableProduct.lblBrandProduct1)).toBeVisible();
+        this.logger.info("Verify that detail detail is visible: product name, category, price, availability, condition, brand");
     }
-    async sendContactUs() {
-        await this.page.getByRole('link', { name: elementLocatorHomePage.hplContactUs }).click();
-        this.logger.info("Click on 'Contact Us' button");
-        expect(await this.page.getByText(variableHomePage.titleContactUs)).toBeVisible();
+    async searchProduct() {
+        await this.page.getByPlaceholder(variableProduct.phdSearch).fill(variableProduct.keySearch);
+        await this.page.locator(elementLocatorProduct.btnSearch).click();
+        this.logger.info("Enter product name in search input and click search button");
+        expect(await this.page.getByText(variableProduct.searchTitle)).toBeVisible();
+        this.logger.info("Verify 'SEARCHED PRODUCTS' is visible");
         await this.page.getByPlaceholder(elementLocatorHomePage.txtName).fill(variableHomePage.name);
         this.logger.info("Enter name: "+variableHomePage.name);
         await this.page.locator(elementLocatorHomePage.txtEmail).fill(variableHomePage.email);
@@ -34,21 +50,16 @@ export class HomePage extends PageBase {
         uploadFiles.setFiles(["uploadFiles/image_demo.png"]);
         await this.page.locator(elementLocatorHomePage.btnSubmit ).click();
         this.logger.info("Click 'Submit' button");
-        await this.page.waitForLoadState("domcontentloaded");
-        await this.page.on("dialog", async(alert) => {
-            const text = alert.message();
-            console.log(text);
-            await alert.accept();
-          //  await this.page.getByLabel('OK').click();
-        
+        this.page.on("dialog", async(alert) => {
+            await alert.accept("OK");
         })
-       // await this.page.keyboard.press('Enter');
-        // this.page.on('dialog', dialog => dialog.accept());
-        // await this.page.getByRole('button').click();
         this.logger.info("Click OK button");
         await this.page.waitForLoadState("domcontentloaded");
         expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
-        //expect(await this.page.locator(variableHomePage.messageSendSuccess)).toBeVisible();
+       // expect(await this.page.locator(variableHomePage.messageSendSuccess)).toBeVisible();
+       setTimeout(() => {
+        this.logger.info("Wait for verify");
+    }, 3000);
         this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is visible");
          await this.page.getByRole('link', { name: elementLocatorHomePage.btnHome }).click();
          this.logger.info("Click 'Home' button");
@@ -62,14 +73,6 @@ export class HomePage extends PageBase {
         this.logger.info("Click on 'Test Cases' button");
         expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
         this.logger.info('Verify user is navigated to test cases page successfully');
-    }
-    async delayBlocking(milliseconds: number){
-        const timeInitial : Date = new Date();
-        var timeNow : Date = new Date();
-        for ( ; timeNow - timeInitial < milliseconds; ){
-            timeNow = new Date();
-        }
-        console.log('Sleep done!');
     }
    
 }
