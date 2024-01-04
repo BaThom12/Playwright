@@ -39,6 +39,7 @@ export class HomePage extends PageBase {
             const text = alert.message();
             console.log(text);
             await alert.accept();
+            await this.page.getByRole('button').nth(0).click();
           //  await this.page.getByLabel('OK').click();
         
         })
@@ -46,7 +47,6 @@ export class HomePage extends PageBase {
         // this.page.on('dialog', dialog => dialog.accept());
         // await this.page.getByRole('button').click();
         this.logger.info("Click OK button");
-        await this.page.waitForLoadState("domcontentloaded");
         expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
         //expect(await this.page.locator(variableHomePage.messageSendSuccess)).toBeVisible();
         this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is visible");

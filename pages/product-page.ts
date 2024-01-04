@@ -1,6 +1,6 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { PageBase } from '@pages/page-base';
-import { elementLocatorProduct,variableProduct } from '@interfaces/productUI';
+import { elementLocatorProduct,variableProduct,arrSearchProduct } from '@interfaces/productUI';
 export class Product extends PageBase {
 
     constructor(page: Page) {
@@ -35,44 +35,25 @@ export class Product extends PageBase {
         this.logger.info("Enter product name in search input and click search button");
         expect(await this.page.getByText(variableProduct.searchTitle)).toBeVisible();
         this.logger.info("Verify 'SEARCHED PRODUCTS' is visible");
-        await this.page.getByPlaceholder(elementLocatorHomePage.txtName).fill(variableHomePage.name);
-        this.logger.info("Enter name: "+variableHomePage.name);
-        await this.page.locator(elementLocatorHomePage.txtEmail).fill(variableHomePage.email);
-        this.logger.info("Enter mail: "+variableHomePage.email);
-        await this.page.getByPlaceholder(elementLocatorHomePage.txtSubject).fill(variableHomePage.subject);
-        this.logger.info("Enter subject: "+variableHomePage.subject);
-        await this.page.getByPlaceholder(elementLocatorHomePage.txtMessage).fill(variableHomePage.message);
-        this.logger.info("Enter your message: "+variableHomePage.message);
-        const[uploadFiles] = await Promise.all([
-            this.page.waitForEvent("filechooser"),
-            this.page.click("input[type='file']")
-        ])
-        uploadFiles.setFiles(["uploadFiles/image_demo.png"]);
-        await this.page.locator(elementLocatorHomePage.btnSubmit ).click();
-        this.logger.info("Click 'Submit' button");
-        this.page.on("dialog", async(alert) => {
-            await alert.accept("OK");
-        })
-        this.logger.info("Click OK button");
-        await this.page.waitForLoadState("domcontentloaded");
-        expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
-       // expect(await this.page.locator(variableHomePage.messageSendSuccess)).toBeVisible();
-       setTimeout(() => {
-        this.logger.info("Wait for verify");
-    }, 3000);
-        this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is visible");
-         await this.page.getByRole('link', { name: elementLocatorHomePage.btnHome }).click();
-         this.logger.info("Click 'Home' button");
-         expect(await this.page.title()).toBe(variableHomePage.title);
-        this.logger.info('Verify that landed to home page successfully');
+        
     }
-    async verifyTestCasePages() {
-        await this.page.waitForLoadState("domcontentloaded");
-        await this.page.locator(elementLocatorHomePage.hplTestCase).click();
-       // await this.page.getByRole('link', { name: elementLocatorHomePage.hplTestCase }).click()
-        this.logger.info("Click on 'Test Cases' button");
-        expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
-        this.logger.info('Verify user is navigated to test cases page successfully');
+    async verifySearchProduct() {
+        const arrNameSearchProduct: string[] = [];
+        let count = 0;
+        for (let i = 0; i < arrSearchProduct.length; i++) {
+            let productName = this.page.locator(elementLocatorProduct.searchProductName.replace('1',(i+1).toString())).toString();
+            this.logger.info("productName: "+productName);
+            this.logger.info("productName of array: "+arrSearchProduct[i]);
+             if(productName.toLowerCase()==arrSearchProduct[i].toLowerCase()){
+                count += 1;
+             }
+                     
+          }
+          if(count==arrSearchProduct.length){
+            this.logger.info("Verify all the products related to search are visible");
+          }else{
+            this.logger.info("Wrong search result: "+count);
+          }
     }
    
 }

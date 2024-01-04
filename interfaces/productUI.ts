@@ -2,6 +2,7 @@ export const elementLocatorProduct = {
 hplProduct : "//a[@href='/products']",
 btnViewProduct1 : "//a[@href='/product_details/1']",
 btnSearch : "#submit_search",
+searchProductName : '(//div[@class="productinfo text-center"]/p)[1]',
 
 }
 
@@ -25,4 +26,4 @@ export const variableProduct = {
         
 }
 
-const arrSearchProduct: readonly string[] = ['Sleeveless Dress', 'Stylish Dress', 'Sleeves Top and Short - Blue & Pink', 'Sleeveless Unicorn Patch Gown - Pink', 'Cotton Mull Embroidered Dress', 'Blue Cotton Indie Mickey Dress', 'Long Maxi Tulle Fancy Dress Up Outfits -Pink','Sleeveless Unicorn Print Fit & Flare Net Dress - Multi','Rose Pink Embroidered Maxi Dress'];
+export const arrSearchProduct: string[] = ['Sleeveless Dress', 'Stylish Dress', 'Sleeves Top and Short - Blue & Pink', 'Sleeveless Unicorn Patch Gown - Pink', 'Cotton Mull Embroidered Dress', 'Blue Cotton Indie Mickey Dress', 'Long Maxi Tulle Fancy Dress Up Outfits -Pink','Sleeveless Unicorn Print Fit & Flare Net Dress - Multi','Rose Pink Embroidered Maxi Dress'];
