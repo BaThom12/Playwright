@@ -3,6 +3,7 @@ hplProduct : "//a[@href='/products']",
 btnViewProduct1 : "//a[@href='/product_details/1']",
 btnSearch : "#submit_search",
 searchProductName : '(//div[@class="productinfo text-center"]/p)[1]',
+//searchProductName : '//div[@class="productinfo text-center"]/p',
 
 }
 

@@ -8,9 +8,10 @@ txtMessage : 'Your Message Here',
 btnSubmit : "//input[@name='submit']",
 btnOK : 'OK',
 btnHome : 'Home',
-messageSendSuccess : "Success! Your details have been submitted successfully.",
-//messageSendSuccess : "//div[@class='status alert alert-success']",
+//messageSendSuccess : "Success! Your details have been submitted successfully.",
+messageSendSuccess : "//div[@class='status alert alert-success']",
 hplTestCase : "(//a[@href='/test_cases'])[1]",
+txtSubscription : "susbscribe_email",
 }
 
 import randomstring from 'randomstring';

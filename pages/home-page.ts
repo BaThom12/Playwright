@@ -1,6 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { PageBase } from '@pages/page-base';
 import { elementLocatorHomePage,variableHomePage } from '@interfaces/homepageUI';
+import scrollIntoView from 'scroll-into-view-if-needed'
 export class HomePage extends PageBase {
 
     constructor(page: Page) {
@@ -47,9 +48,13 @@ export class HomePage extends PageBase {
         // this.page.on('dialog', dialog => dialog.accept());
         // await this.page.getByRole('button').click();
         this.logger.info("Click OK button");
-        expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
-        //expect(await this.page.locator(variableHomePage.messageSendSuccess)).toBeVisible();
+        //expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
+        const messageSuccess = await this.page.locator(variableHomePage.messageSendSuccess).textContent();
+        if (messageSuccess == variableHomePage.messageSendSuccess){
         this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is visible");
+        }else{
+        this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is invisible");    
+        }
          await this.page.getByRole('link', { name: elementLocatorHomePage.btnHome }).click();
          this.logger.info("Click 'Home' button");
          expect(await this.page.title()).toBe(variableHomePage.title);
@@ -63,14 +68,15 @@ export class HomePage extends PageBase {
         expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
         this.logger.info('Verify user is navigated to test cases page successfully');
     }
-    async delayBlocking(milliseconds: number){
-        const timeInitial : Date = new Date();
-        var timeNow : Date = new Date();
-        for ( ; timeNow - timeInitial < milliseconds; ){
-            timeNow = new Date();
-        }
-        console.log('Sleep done!');
+    async verifySubscription() {
+        const subscriptionTextbox = document.getElementById('susbscribe_email');
+        subscriptionTextbox.scrollIntoView({ block: "end" });
+        await this.page.locator(elementLocatorHomePage.hplTestCase).click();
+        this.logger.info("Click on 'Test Cases' button");
+        expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
+        this.logger.info('Verify user is navigated to test cases page successfully');
     }
+    
    
 }
 

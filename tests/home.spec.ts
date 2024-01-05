@@ -13,5 +13,11 @@ import { HomePage } from '@pages/home-page';
         await homePage.verifyTitle();
         await homePage.verifyTestCasePages();   
     });
+    test('Verify Subscription in home page', async ({ page }) => {
+        const homePage = new HomePage(page);
+        await homePage.open();
+        await homePage.verifyTitle();
+        await homePage.verifySubscription();   
+    });
 
 

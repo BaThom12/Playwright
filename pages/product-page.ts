@@ -40,11 +40,20 @@ export class Product extends PageBase {
     async verifySearchProduct() {
         const arrNameSearchProduct: string[] = [];
         let count = 0;
+    //     let listProductName = await this.page.locator(elementLocatorProduct.searchProductName).all();
+    //     let  arrProductName: string[] = [];
+    //     for (const item of listProductName){
+    //         const nameProduct = await item.textContent();
+    //         const name = nameProduct ?? "";
+    //         arrProductName.push(name);
+    //     }
+    //     //this.logger.info("array: ",arrProductName);
+    //    console.log("array: ",arrProductName);
         for (let i = 0; i < arrSearchProduct.length; i++) {
-            let productName = this.page.locator(elementLocatorProduct.searchProductName.replace('1',(i+1).toString())).toString();
+            let productName = await this.page.locator(elementLocatorProduct.searchProductName.replace('1',(i+1).toString())).textContent();
             this.logger.info("productName: "+productName);
             this.logger.info("productName of array: "+arrSearchProduct[i]);
-             if(productName.toLowerCase()==arrSearchProduct[i].toLowerCase()){
+             if(productName==arrSearchProduct[i]){
                 count += 1;
              }
                      
