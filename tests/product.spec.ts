@@ -10,14 +10,21 @@ import { Product } from '@pages/product-page';
     //     await product.navigateAllProduct();   
     //     await product.viewDetailProduct();   
     // });
-    test('Search Product', async ({ page }) => {
+    // test('Search Product', async ({ page }) => {
+    //     const homePage = new HomePage(page);
+    //     const product = new Product(page);
+    //     await homePage.open();
+    //     await homePage.verifyTitle();
+    //     await product.navigateAllProduct();  
+    //     await product.searchProduct();  
+    //     await product.verifySearchProduct();  
+    // });
+    test('Add Products in Cart', async ({ page }) => {
         const homePage = new HomePage(page);
         const product = new Product(page);
         await homePage.open();
         await homePage.verifyTitle();
-        await product.navigateAllProduct();  
-        await product.searchProduct();  
-        await product.verifySearchProduct();  
+        await product.addProductInCart();   
     });
 
 

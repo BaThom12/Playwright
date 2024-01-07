@@ -7,8 +7,7 @@ export class Product extends PageBase {
         super(page);
     }
     async navigateAllProduct() {
-       // await this.page.getByRole('link', { name: elementLocatorProduct.hplProduct }).click();
-        await this.page.getByText('Products').click();
+        await this.page.locator(elementLocatorProduct.hplProduct).click();
         this.logger.info("Click on 'Products' button");
         expect(await this.page.title()).toBe(variableProduct.titleAllProduct);
         this.logger.info("Verify user is navigated to ALL PRODUCTS page successfully");
@@ -40,15 +39,6 @@ export class Product extends PageBase {
     async verifySearchProduct() {
         const arrNameSearchProduct: string[] = [];
         let count = 0;
-    //     let listProductName = await this.page.locator(elementLocatorProduct.searchProductName).all();
-    //     let  arrProductName: string[] = [];
-    //     for (const item of listProductName){
-    //         const nameProduct = await item.textContent();
-    //         const name = nameProduct ?? "";
-    //         arrProductName.push(name);
-    //     }
-    //     //this.logger.info("array: ",arrProductName);
-    //    console.log("array: ",arrProductName);
         for (let i = 0; i < arrSearchProduct.length; i++) {
             let productName = await this.page.locator(elementLocatorProduct.searchProductName.replace('1',(i+1).toString())).textContent();
             this.logger.info("productName: "+productName);
@@ -63,6 +53,21 @@ export class Product extends PageBase {
           }else{
             this.logger.info("Wrong search result: "+count);
           }
+    }
+    async addProductInCart() {
+        await this.page.locator(elementLocatorProduct.hplProduct).click();
+        this.logger.info("Click 'Products' button");
+        await this.page.waitForLoadState("domcontentloaded");
+        await this.page.locator(elementLocatorProduct.product).hover();
+        await this.page.locator(elementLocatorProduct.btnAddToCart).click();
+        this.logger.info("Hover over first product and click 'Add to cart'");
+        await this.page.getByText(elementLocatorProduct.btnContinueShopping).click();
+        this.logger.info("Click 'Continue Shopping' button");
+        await this.page.locator(elementLocatorProduct.product.replace('2','3')).hover();
+        await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2','4')).click();
+        this.logger.info("Hover over second product and click 'Add to cart'");
+        await this.page.locator(elementLocatorProduct.btnCViewCart).click();
+        this.logger.info("HClick 'View Cart' button");
     }
    
 }

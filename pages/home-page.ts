@@ -48,13 +48,14 @@ export class HomePage extends PageBase {
         // this.page.on('dialog', dialog => dialog.accept());
         // await this.page.getByRole('button').click();
         this.logger.info("Click OK button");
-        //expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
-        const messageSuccess = await this.page.locator(variableHomePage.messageSendSuccess).textContent();
-        if (messageSuccess == variableHomePage.messageSendSuccess){
+        expect(await this.page.getByText(variableHomePage.messageSendSuccess)).toBeVisible();
         this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is visible");
-        }else{
-        this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is invisible");    
-        }
+        // const messageSuccess = await this.page.getByText(variableHomePage.messageSendSuccess).to();
+        // if (messageSuccess == variableHomePage.messageSendSuccess){
+        // this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is visible");
+        // }else{
+        // this.logger.info("Verify success message 'Success! Your details have been submitted successfully.' is invisible");    
+        // }
          await this.page.getByRole('link', { name: elementLocatorHomePage.btnHome }).click();
          this.logger.info("Click 'Home' button");
          expect(await this.page.title()).toBe(variableHomePage.title);
@@ -68,13 +69,19 @@ export class HomePage extends PageBase {
         expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
         this.logger.info('Verify user is navigated to test cases page successfully');
     }
-    async verifySubscription() {
-        const subscriptionTextbox = document.getElementById('susbscribe_email');
-        subscriptionTextbox.scrollIntoView({ block: "end" });
-        await this.page.locator(elementLocatorHomePage.hplTestCase).click();
-        this.logger.info("Click on 'Test Cases' button");
-        expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
-        this.logger.info('Verify user is navigated to test cases page successfully');
+    async verifySubscription(page:string) {
+        if(page=='cart'){
+            await this.page.locator(elementLocatorHomePage.btnSubscription).click();
+            this.logger.info("Click 'Cart' button");
+        }
+        expect(await this.page.getByText(variableHomePage.titleSubscription)).toBeVisible();
+        this.logger.info("Verify text 'SUBSCRIPTION'");
+        await this.page.locator(elementLocatorHomePage.txtSubscription).fill(variableHomePage.email);
+        await this.page.locator(elementLocatorHomePage.btnSubscription).click();
+        this.logger.info("Enter email address in input and click arrow button");
+        const message = await this.page.locator(elementLocatorHomePage.messageSendSubscriptionSuccess).textContent();
+        expect(message==variableHomePage.messageSendSubscriptionSuccess);
+        this.logger.info(" Verify success message 'You have been successfully subscribed!' is visible");
     }
     
    

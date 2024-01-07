@@ -9,9 +9,12 @@ btnSubmit : "//input[@name='submit']",
 btnOK : 'OK',
 btnHome : 'Home',
 //messageSendSuccess : "Success! Your details have been submitted successfully.",
-messageSendSuccess : "//div[@class='status alert alert-success']",
+messageSendSuccess : '//div[@class="status alert alert-success"]',
 hplTestCase : "(//a[@href='/test_cases'])[1]",
-txtSubscription : "susbscribe_email",
+txtSubscription : "#susbscribe_email",
+btnSubscription : "#subscribe",
+messageSendSubscriptionSuccess : '//div[@class="alert-success alert"]',
+hplProduct : "//a[@href='/view_cart]",
 }
 
 import randomstring from 'randomstring';
@@ -25,5 +28,7 @@ export const variableHomePage = {
     messageSendSuccess : 'Success! Your details have been submitted successfully.',
    // messageSendSuccess : "//div[@class='status alert alert-success']",
     titleTestCase : "Automation Practice Website for UI Testing - Test Cases",
+    titleSubscription : "Subscription",
+    messageSendSubscriptionSuccess : "You have been successfully subscribed!",
         
 }

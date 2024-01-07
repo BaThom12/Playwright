@@ -1,9 +1,14 @@
 export const elementLocatorProduct = {
-hplProduct : "//a[@href='/products']",
+hplProduct : '//a[@href="/products"]',
 btnViewProduct1 : "//a[@href='/product_details/1']",
 btnSearch : "#submit_search",
 searchProductName : '(//div[@class="productinfo text-center"]/p)[1]',
-//searchProductName : '//div[@class="productinfo text-center"]/p',
+product : '(//div[@class="col-sm-4"])[2]',
+product2 : '(//div[@class="product-overlay"])[2]',
+//btnAddToCart : '(//div[@class="product-overlay"]//a[@data-product-id="1"])[1]',
+btnAddToCart : '(//a[contains(text(),"Add to cart")])[2]',
+btnContinueShopping : 'Continue Shopping',
+btnCViewCart : '//div[@id="cartModal"]//p//a[@href="/view_cart"]',
 
 }
 
