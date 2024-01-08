@@ -1,6 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { PageBase } from '@pages/page-base';
 import { elementLocatorProduct,variableProduct,arrSearchProduct } from '@interfaces/productUI';
+import { elementLocatorCart,variableCart } from '@interfaces/cartUI';
 export class Product extends PageBase {
 
     constructor(page: Page) {
@@ -55,6 +56,19 @@ export class Product extends PageBase {
           }
     }
     async addProductInCart() {
+        const nameProduct1 = await this.page.locator(elementLocatorProduct.txtFirstProductName.replace('text','p')).first().textContent();
+        const priceProduct1 = await this.page.locator(elementLocatorProduct.txtFirstProductName.replace('text','h2')).first().textContent();
+        const nameProduct2 = await this.page.locator(elementLocatorProduct.txtSecondProductName.replace('text','p')).first().textContent();
+        const priceProduct2 = await this.page.locator(elementLocatorProduct.txtSecondProductName.replace('text','h2')).first().textContent();
+        const nameProduct1InCart = await this.page.locator(elementLocatorCart.nameProduct).textContent();
+        const priceProduct1InCart = await this.page.locator(elementLocatorCart.priceProduct).textContent();
+        const totalPriceProduct1InCart = await this.page.locator(elementLocatorCart.totalPriceProduct).textContent();
+        const nameProduct2InCart = await this.page.locator(elementLocatorCart.nameProduct.replace('1','2')).textContent();
+        const priceProduct2InCart = await this.page.locator(elementLocatorCart.priceProduct.replace('1','2')).textContent();
+        const totalPriceProduct2InCart = await this.page.locator(elementLocatorCart.totalPriceProduct.replace('1','2')).textContent();
+        const quantityProduct1 = await this.page.locator(elementLocatorCart.quantityProduct).textContent();
+        const quantityProduct2 = await this.page.locator(elementLocatorCart.quantityProduct.replace('1','2')).textContent();
+    
         await this.page.locator(elementLocatorProduct.hplProduct).click();
         this.logger.info("Click 'Products' button");
         await this.page.waitForLoadState("domcontentloaded");
@@ -67,7 +81,19 @@ export class Product extends PageBase {
         await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2','4')).click();
         this.logger.info("Hover over second product and click 'Add to cart'");
         await this.page.locator(elementLocatorProduct.btnCViewCart).click();
-        this.logger.info("HClick 'View Cart' button");
+        this.logger.info("Click 'View Cart' button");
+
+        expect(nameProduct1==nameProduct1InCart);
+        expect(nameProduct2==nameProduct2InCart);
+        this.logger.info("Verify both products are added to Cart");
+        expect(priceProduct1==priceProduct1InCart);
+        expect(priceProduct2==priceProduct2InCart);
+        expect(quantityProduct1=='1');
+        expect(quantityProduct2=='1');
+        expect(priceProduct1==totalPriceProduct1InCart);
+        expect(priceProduct2==totalPriceProduct2InCart);
+        this.logger.info("Verify their prices, quantity and total price");
+        
     }
    
 }

@@ -9,6 +9,8 @@ product2 : '(//div[@class="product-overlay"])[2]',
 btnAddToCart : '(//a[contains(text(),"Add to cart")])[2]',
 btnContinueShopping : 'Continue Shopping',
 btnCViewCart : '//div[@id="cartModal"]//p//a[@href="/view_cart"]',
+txtFirstProductName : '//a[@data-product-id="1"]/../text',
+txtSecondProductName : '//a[@data-product-id="2"]/../text',
 
 }
 
