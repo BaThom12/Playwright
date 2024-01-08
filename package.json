@@ -27,6 +27,8 @@
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.10.5",
     "@types/randomstring": "^1.1.11",
+    "allure-commandline": "^2.25.0",
+    "allure-playwright": "^2.10.0",
     "winston": "^3.7.2"
   },
   "dependencies": {

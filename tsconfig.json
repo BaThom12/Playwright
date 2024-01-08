@@ -9,6 +9,10 @@
           "@interfaces/*": ["interfaces/*"],
           "@pages/*": ["pages/*"],
           "@utils/*":["utils/*"]
-      }
+      },
+      "devDependencies":{
+        "@playwrigh/test": "1.35.1",
+        "allure-playwright": "2.4.0"
+      },
     }
   }
