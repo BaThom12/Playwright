@@ -1,0 +1,34 @@
+[2024-01-09T08:18:56.486Z] info: => browser.newContext started
+[2024-01-09T08:18:56.502Z] info: <= browser.newContext succeeded
+[2024-01-09T08:18:56.507Z] info: => browserContext.newPage started
+[2024-01-09T08:18:56.781Z] info: <= browserContext.newPage succeeded
+[2024-01-09T08:18:56.786Z] info: => page.goto started
+[2024-01-09T08:19:01.137Z] info: <= page.goto succeeded
+[2024-01-09T08:19:01.137Z] info: Navigate to url http://automationexercise.com
+[2024-01-09T08:19:01.138Z] info: => page.waitForLoadState started
+[2024-01-09T08:19:01.144Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T08:19:01.146Z] info: => page.title started
+[2024-01-09T08:19:01.160Z] info: <= page.title succeeded
+[2024-01-09T08:19:01.162Z] info: Verify that home page is visible successfully
+[2024-01-09T08:19:01.165Z] info: => locator.click started
+[2024-01-09T08:19:01.586Z] info: <= locator.click succeeded
+[2024-01-09T08:19:01.587Z] info: Click on Signup / Login button
+[2024-01-09T08:19:01.588Z] info: => page.waitForLoadState started
+[2024-01-09T08:19:01.631Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T08:19:01.633Z] info: => expect.toBeVisible started
+[2024-01-09T08:19:01.634Z] info: Verify New User Signup! is visible
+[2024-01-09T08:19:01.635Z] info: => locator.fill started
+[2024-01-09T08:19:01.652Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T08:19:01.667Z] info: <= locator.fill succeeded
+[2024-01-09T08:19:01.667Z] info: Enter name: WZDx16iFSVh9BdK
+[2024-01-09T08:19:01.668Z] info: => locator.fill started
+[2024-01-09T08:19:01.693Z] info: <= locator.fill succeeded
+[2024-01-09T08:19:01.694Z] info: Enter email: CRjA3vV472@gmail.com
+[2024-01-09T08:19:01.694Z] info: => locator.click started
+[2024-01-09T08:19:02.055Z] info: <= locator.click succeeded
+[2024-01-09T08:19:02.055Z] info: Click on Signup button
+[2024-01-09T08:19:02.057Z] info: => expect.toBeVisible started
+[2024-01-09T08:19:02.057Z] info: Verify error 'Email Address already exist!' is visible
+[2024-01-09T08:19:02.058Z] info: => page.screenshot started
+[2024-01-09T08:19:02.090Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T08:19:02.186Z] info: <= page.screenshot succeeded

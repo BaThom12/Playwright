@@ -10,6 +10,7 @@ export class Account extends PageBase {
     async enterSignupInfor(name: string, email: string) {
         await this.page.getByRole('link', { name: elementLocatorAccount.singupHyperlink }).click();
         this.logger.info('Click on Signup / Login button');
+        await this.page.waitForLoadState('domcontentloaded');
         expect(await this.page.getByText(elementLocatorAccount.singupTitle)).toBeVisible();
         this.logger.info('Verify New User Signup! is visible');
         await this.page.getByPlaceholder(elementLocatorAccount.lblName).fill(name);
@@ -61,6 +62,7 @@ export class Account extends PageBase {
     async deleteAccount() {
         await this.page.getByText(elementLocatorAccount.hplDeleteAccount).click();
         this.logger.info('Click Delete Account button');
+        await this.page.waitForLoadState('domcontentloaded');
         expect(await this.page.getByText(variableAccount.titleDeleteAccount)).toBeVisible();
         await this.page.getByRole('link', { name: elementLocatorAccount.btnContinue }).click();
         this.logger.info('Click Continue button');
@@ -69,6 +71,7 @@ export class Account extends PageBase {
     async enterExistingEmail(name: string, email: string) {
         await this.page.getByRole('link', { name: elementLocatorAccount.singupHyperlink }).click();
         this.logger.info('Click on Signup / Login button');
+        await this.page.waitForLoadState('domcontentloaded');
         expect(await this.page.getByText(elementLocatorAccount.singupTitle)).toBeVisible();
         this.logger.info('Verify New User Signup! is visible');
         await this.page.getByPlaceholder(elementLocatorAccount.lblName).fill(name);

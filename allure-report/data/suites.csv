@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Mon Jan 08 20:30:17 ICT 2024","Mon Jan 08 20:31:08 ICT 2024","50982","chromium","product.spec.ts","","","","Add Products in Cart",""
+"failed","Tue Jan 09 14:48:03 ICT 2024","Tue Jan 09 14:48:08 ICT 2024","4450","chromium","product.spec.ts","","","","Verify All Products and product detail page",""
+"broken","Tue Jan 09 14:48:14 ICT 2024","Tue Jan 09 14:49:05 ICT 2024","50666","chromium","product.spec.ts","","","","Add Products in Cart",""
+"failed","Tue Jan 09 14:48:08 ICT 2024","Tue Jan 09 14:48:13 ICT 2024","4790","chromium","product.spec.ts","","","","Search Product",""

@@ -1,7 +1,7 @@
 import { expect, Locator, Page } from '@playwright/test';
 import { PageBase } from '@pages/page-base';
 import { elementLocatorHomePage,variableHomePage } from '@interfaces/homepageUI';
-import scrollIntoView from 'scroll-into-view-if-needed'
+
 export class HomePage extends PageBase {
 
     constructor(page: Page) {
@@ -13,6 +13,7 @@ export class HomePage extends PageBase {
     }
 
     async verifyTitle() {
+        await this.page.waitForLoadState('domcontentloaded');
         expect(await this.page.title()).toBe(variableHomePage.title);
         this.logger.info('Verify that home page is visible successfully');
     }
@@ -36,10 +37,8 @@ export class HomePage extends PageBase {
         await this.page.locator(elementLocatorHomePage.btnSubmit ).click();
         this.logger.info("Click 'Submit' button");
         await this.page.waitForLoadState("domcontentloaded");
-        await this.page.on("dialog", async(alert) => {
-            const text = alert.message();
-            console.log(text);
-            await alert.accept();
+        await this.page.on("dialog", async dialog=> {
+            await dialog.accept();
             await this.page.getByRole('button').nth(0).click();
           //  await this.page.getByLabel('OK').click();
         
@@ -66,6 +65,7 @@ export class HomePage extends PageBase {
         await this.page.locator(elementLocatorHomePage.hplTestCase).click();
        // await this.page.getByRole('link', { name: elementLocatorHomePage.hplTestCase }).click()
         this.logger.info("Click on 'Test Cases' button");
+        await this.page.waitForLoadState('domcontentloaded');
         expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
         this.logger.info('Verify user is navigated to test cases page successfully');
     }

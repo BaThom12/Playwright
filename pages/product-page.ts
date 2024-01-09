@@ -10,6 +10,7 @@ export class Product extends PageBase {
     async navigateAllProduct() {
         await this.page.locator(elementLocatorProduct.hplProduct).click();
         this.logger.info("Click on 'Products' button");
+        await this.page.waitForLoadState('domcontentloaded');
         expect(await this.page.title()).toBe(variableProduct.titleAllProduct);
         this.logger.info("Verify user is navigated to ALL PRODUCTS page successfully");
         expect(await this.page.getByText(variableProduct.lblAllProduct)).toBeVisible();

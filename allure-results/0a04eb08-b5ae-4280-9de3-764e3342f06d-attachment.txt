@@ -1,0 +1,36 @@
+[2024-01-09T08:18:24.144Z] info: => browser.newContext started
+[2024-01-09T08:18:24.167Z] info: <= browser.newContext succeeded
+[2024-01-09T08:18:24.175Z] info: => browserContext.newPage started
+[2024-01-09T08:18:24.858Z] info: <= browserContext.newPage succeeded
+[2024-01-09T08:18:24.915Z] info: => page.goto started
+[2024-01-09T08:18:35.024Z] info: <= page.goto succeeded
+[2024-01-09T08:18:35.026Z] info: Navigate to url http://automationexercise.com
+[2024-01-09T08:18:35.028Z] info: => page.waitForLoadState started
+[2024-01-09T08:18:35.040Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T08:18:35.043Z] info: => page.title started
+[2024-01-09T08:18:35.077Z] info: <= page.title succeeded
+[2024-01-09T08:18:35.083Z] info: Verify that home page is visible successfully
+[2024-01-09T08:18:35.091Z] info: => locator.click started
+[2024-01-09T08:18:36.314Z] info: <= locator.click succeeded
+[2024-01-09T08:18:36.314Z] info: Click on Signup / Login button
+[2024-01-09T08:18:36.316Z] info: => page.waitForLoadState started
+[2024-01-09T08:18:36.392Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T08:18:36.400Z] info: => expect.toBeVisible started
+[2024-01-09T08:18:36.401Z] info: Verify Login to your account is visible
+[2024-01-09T08:18:36.404Z] info: => locator.fill started
+[2024-01-09T08:18:36.462Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T08:18:36.564Z] info: <= locator.fill succeeded
+[2024-01-09T08:18:36.564Z] info: Enter correct email: robby.howell@yahoo.com
+[2024-01-09T08:18:36.565Z] info: => locator.fill started
+[2024-01-09T08:18:36.686Z] info: <= locator.fill succeeded
+[2024-01-09T08:18:36.686Z] info: Enter correct password: aiwhzw15q7
+[2024-01-09T08:18:36.689Z] info: => locator.click started
+[2024-01-09T08:18:37.746Z] info: <= locator.click succeeded
+[2024-01-09T08:18:37.747Z] info: Click login button
+[2024-01-09T08:18:37.748Z] info: => page.waitForLoadState started
+[2024-01-09T08:18:37.770Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T08:18:37.773Z] info: => expect.toBeVisible started
+[2024-01-09T08:18:37.774Z] info: Verify that Logged in as username is visible
+[2024-01-09T08:18:37.778Z] info: => page.screenshot started
+[2024-01-09T08:18:37.848Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T08:18:38.130Z] info: <= page.screenshot succeeded
