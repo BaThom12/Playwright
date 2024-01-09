@@ -27,6 +27,7 @@ export const variableProduct = {
   phdSearch : "Search Product",
   keySearch : "dress",
   searchTitle : "Searched Products",
+  urlProduct : "https://automationexercise.com/products",
 
 
 

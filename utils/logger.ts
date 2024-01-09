@@ -1,5 +1,6 @@
 
 import { createLogger, transports, format } from "winston";
+import { allure } from "allure-playwright";
 
 export const logger = createLogger({
     transports: [new transports.Console({
@@ -24,6 +25,7 @@ export const logger = createLogger({
             })
         )
     }),],
+    
     format: format.combine(format.metadata(), format.timestamp()),
     defaultMeta: {
         test: 'PageBase',

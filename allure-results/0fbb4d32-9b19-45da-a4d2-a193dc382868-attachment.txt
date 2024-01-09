@@ -1,0 +1,39 @@
+[2024-01-09T13:46:10.718Z] info: => browser.newContext started
+[2024-01-09T13:46:10.736Z] info: <= browser.newContext succeeded
+[2024-01-09T13:46:10.749Z] info: => browserContext.newPage started
+[2024-01-09T13:46:10.930Z] info: <= browserContext.newPage succeeded
+[2024-01-09T13:46:10.943Z] info: => page.goto started
+[2024-01-09T13:46:16.339Z] info: <= page.goto succeeded
+[2024-01-09T13:46:16.339Z] info: Navigate to url http://automationexercise.com
+[2024-01-09T13:46:16.342Z] info: => page.waitForLoadState started
+[2024-01-09T13:46:16.356Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T13:46:16.360Z] info: => page.title started
+[2024-01-09T13:46:16.382Z] info: <= page.title succeeded
+[2024-01-09T13:46:16.386Z] info: Verify that home page is visible successfully
+[2024-01-09T13:46:16.395Z] info: => locator.click started
+[2024-01-09T13:46:16.817Z] info: <= locator.click succeeded
+[2024-01-09T13:46:16.817Z] info: Click on 'Products' button
+[2024-01-09T13:46:16.819Z] info: => page.waitForLoadState started
+[2024-01-09T13:46:16.994Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T13:46:16.996Z] info: Verify user is navigated to ALL PRODUCTS page successfully
+[2024-01-09T13:46:17.009Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:17.010Z] info: The products list is visible
+[2024-01-09T13:46:17.011Z] info: => locator.click started
+[2024-01-09T13:46:17.059Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.393Z] info: <= locator.click succeeded
+[2024-01-09T13:46:19.394Z] info: Click on 'View Product' of first product
+[2024-01-09T13:46:19.399Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:19.404Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:19.412Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:19.417Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:19.426Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:19.432Z] info: => expect.toBeVisible started
+[2024-01-09T13:46:19.433Z] info: Verify that detail detail is visible: product name, category, price, availability, condition, brand
+[2024-01-09T13:46:19.443Z] info: => page.screenshot started
+[2024-01-09T13:46:19.519Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.524Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.528Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.532Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.536Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.540Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:46:19.749Z] info: <= page.screenshot succeeded

@@ -30,5 +30,6 @@ export const variableHomePage = {
     titleTestCase : "Automation Practice Website for UI Testing - Test Cases",
     titleSubscription : "Subscription",
     messageSendSubscriptionSuccess : "You have been successfully subscribed!",
+    urlTestCase : "https://automationexercise.com/test_cases",
         
 }

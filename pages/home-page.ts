@@ -66,7 +66,7 @@ export class HomePage extends PageBase {
        // await this.page.getByRole('link', { name: elementLocatorHomePage.hplTestCase }).click()
         this.logger.info("Click on 'Test Cases' button");
         await this.page.waitForLoadState('domcontentloaded');
-        expect(await this.page.title()).toBe(variableHomePage.titleTestCase);
+        expect(await this.page.url() ==variableHomePage.urlTestCase);
         this.logger.info('Verify user is navigated to test cases page successfully');
     }
     async verifySubscription(page:string) {

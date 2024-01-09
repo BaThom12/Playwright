@@ -1,0 +1,28 @@
+[2024-01-09T13:29:48.375Z] info: => browser.newContext started
+[2024-01-09T13:29:48.384Z] info: <= browser.newContext succeeded
+[2024-01-09T13:29:48.390Z] info: => browserContext.newPage started
+[2024-01-09T13:29:48.545Z] info: <= browserContext.newPage succeeded
+[2024-01-09T13:29:48.550Z] info: => page.goto started
+[2024-01-09T13:29:53.671Z] info: <= page.goto succeeded
+[2024-01-09T13:29:53.672Z] info: Navigate to url http://automationexercise.com
+[2024-01-09T13:29:53.675Z] info: => page.waitForLoadState started
+[2024-01-09T13:29:53.685Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T13:29:53.691Z] info: => page.title started
+[2024-01-09T13:29:53.706Z] info: <= page.title succeeded
+[2024-01-09T13:29:53.712Z] info: Verify that home page is visible successfully
+[2024-01-09T13:29:53.715Z] info: => locator.click started
+[2024-01-09T13:29:53.843Z] info: <= locator.click succeeded
+[2024-01-09T13:29:53.843Z] info: Click 'Cart' button
+[2024-01-09T13:29:53.846Z] info: => expect.toBeVisible started
+[2024-01-09T13:29:53.846Z] info: Verify text 'SUBSCRIPTION'
+[2024-01-09T13:29:53.847Z] info: => locator.fill started
+[2024-01-09T13:29:53.859Z] info: <= expect.toBeVisible succeeded
+[2024-01-09T13:29:53.874Z] info: <= locator.fill succeeded
+[2024-01-09T13:29:53.875Z] info: => locator.click started
+[2024-01-09T13:29:54.056Z] info: <= locator.click succeeded
+[2024-01-09T13:29:54.056Z] info: Enter email address in input and click arrow button
+[2024-01-09T13:29:54.057Z] info: => locator.textContent started
+[2024-01-09T13:29:54.062Z] info: <= locator.textContent succeeded
+[2024-01-09T13:29:54.063Z] info:  Verify success message 'You have been successfully subscribed!' is visible
+[2024-01-09T13:29:54.066Z] info: => page.screenshot started
+[2024-01-09T13:29:54.258Z] info: <= page.screenshot succeeded

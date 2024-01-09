@@ -1,0 +1,22 @@
+[2024-01-09T13:29:36.865Z] info: => browser.newContext started
+[2024-01-09T13:29:36.884Z] info: <= browser.newContext succeeded
+[2024-01-09T13:29:36.894Z] info: => browserContext.newPage started
+[2024-01-09T13:29:37.078Z] info: <= browserContext.newPage succeeded
+[2024-01-09T13:29:37.091Z] info: => page.goto started
+[2024-01-09T13:29:41.534Z] info: <= page.goto succeeded
+[2024-01-09T13:29:41.535Z] info: Navigate to url http://automationexercise.com
+[2024-01-09T13:29:41.538Z] info: => page.waitForLoadState started
+[2024-01-09T13:29:41.547Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T13:29:41.551Z] info: => page.title started
+[2024-01-09T13:29:41.568Z] info: <= page.title succeeded
+[2024-01-09T13:29:41.575Z] info: Verify that home page is visible successfully
+[2024-01-09T13:29:41.577Z] info: => page.waitForLoadState started
+[2024-01-09T13:29:41.581Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T13:29:41.582Z] info: => locator.click started
+[2024-01-09T13:29:41.694Z] info: <= locator.click succeeded
+[2024-01-09T13:29:41.695Z] info: Click on 'Test Cases' button
+[2024-01-09T13:29:41.695Z] info: => page.waitForLoadState started
+[2024-01-09T13:29:41.699Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T13:29:41.699Z] info: Verify user is navigated to test cases page successfully
+[2024-01-09T13:29:41.701Z] info: => page.screenshot started
+[2024-01-09T13:29:42.293Z] info: <= page.screenshot succeeded

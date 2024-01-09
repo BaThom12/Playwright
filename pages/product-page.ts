@@ -2,6 +2,7 @@ import { expect, Locator, Page } from '@playwright/test';
 import { PageBase } from '@pages/page-base';
 import { elementLocatorProduct,variableProduct,arrSearchProduct } from '@interfaces/productUI';
 import { elementLocatorCart,variableCart } from '@interfaces/cartUI';
+import { allure } from "allure-playwright";
 export class Product extends PageBase {
 
     constructor(page: Page) {
@@ -10,9 +11,11 @@ export class Product extends PageBase {
     async navigateAllProduct() {
         await this.page.locator(elementLocatorProduct.hplProduct).click();
         this.logger.info("Click on 'Products' button");
+        await allure.logStep("Click on 'Products' button");
         await this.page.waitForLoadState('domcontentloaded');
-        expect(await this.page.title()).toBe(variableProduct.titleAllProduct);
+        expect(await this.page.url() == variableProduct.urlProduct);
         this.logger.info("Verify user is navigated to ALL PRODUCTS page successfully");
+        await allure.logStep("Verify user is navigated to ALL PRODUCTS page successfully");
         expect(await this.page.getByText(variableProduct.lblAllProduct)).toBeVisible();
         this.logger.info("The products list is visible");
         
@@ -60,16 +63,7 @@ export class Product extends PageBase {
         const nameProduct1 = await this.page.locator(elementLocatorProduct.txtFirstProductName.replace('text','p')).first().textContent();
         const priceProduct1 = await this.page.locator(elementLocatorProduct.txtFirstProductName.replace('text','h2')).first().textContent();
         const nameProduct2 = await this.page.locator(elementLocatorProduct.txtSecondProductName.replace('text','p')).first().textContent();
-        const priceProduct2 = await this.page.locator(elementLocatorProduct.txtSecondProductName.replace('text','h2')).first().textContent();
-        const nameProduct1InCart = await this.page.locator(elementLocatorCart.nameProduct).textContent();
-        const priceProduct1InCart = await this.page.locator(elementLocatorCart.priceProduct).textContent();
-        const totalPriceProduct1InCart = await this.page.locator(elementLocatorCart.totalPriceProduct).textContent();
-        const nameProduct2InCart = await this.page.locator(elementLocatorCart.nameProduct.replace('1','2')).textContent();
-        const priceProduct2InCart = await this.page.locator(elementLocatorCart.priceProduct.replace('1','2')).textContent();
-        const totalPriceProduct2InCart = await this.page.locator(elementLocatorCart.totalPriceProduct.replace('1','2')).textContent();
-        const quantityProduct1 = await this.page.locator(elementLocatorCart.quantityProduct).textContent();
-        const quantityProduct2 = await this.page.locator(elementLocatorCart.quantityProduct.replace('1','2')).textContent();
-    
+        const priceProduct2 = await this.page.locator(elementLocatorProduct.txtSecondProductName.replace('text','h2')).first().textContent();       
         await this.page.locator(elementLocatorProduct.hplProduct).click();
         this.logger.info("Click 'Products' button");
         await this.page.waitForLoadState("domcontentloaded");
@@ -83,7 +77,14 @@ export class Product extends PageBase {
         this.logger.info("Hover over second product and click 'Add to cart'");
         await this.page.locator(elementLocatorProduct.btnCViewCart).click();
         this.logger.info("Click 'View Cart' button");
-
+        const nameProduct1InCart = await this.page.locator(elementLocatorCart.nameProduct).textContent();
+        const priceProduct1InCart = await this.page.locator(elementLocatorCart.priceProduct).textContent();
+        const totalPriceProduct1InCart = await this.page.locator(elementLocatorCart.totalPriceProduct).textContent();
+        const nameProduct2InCart = await this.page.locator(elementLocatorCart.nameProduct.replace('1','2')).textContent();
+        const priceProduct2InCart = await this.page.locator(elementLocatorCart.priceProduct.replace('1','2')).textContent();
+        const totalPriceProduct2InCart = await this.page.locator(elementLocatorCart.totalPriceProduct.replace('1','2')).textContent();
+        const quantityProduct1 = await this.page.locator(elementLocatorCart.quantityProduct).textContent();
+        const quantityProduct2 = await this.page.locator(elementLocatorCart.quantityProduct.replace('1','2')).textContent();
         expect(nameProduct1==nameProduct1InCart);
         expect(nameProduct2==nameProduct2InCart);
         this.logger.info("Verify both products are added to Cart");
@@ -96,6 +97,10 @@ export class Product extends PageBase {
         this.logger.info("Verify their prices, quantity and total price");
         
     }
+    async verifyQuantityProductInCart() {
+
+    }
+
    
 }
 

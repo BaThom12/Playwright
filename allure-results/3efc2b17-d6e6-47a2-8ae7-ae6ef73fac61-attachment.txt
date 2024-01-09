@@ -1,0 +1,26 @@
+[2024-01-09T14:21:23.946Z] info: => browser.newContext started
+[2024-01-09T14:21:23.966Z] info: <= browser.newContext succeeded
+[2024-01-09T14:21:23.983Z] info: => browserContext.newPage started
+[2024-01-09T14:21:24.153Z] info: <= browserContext.newPage succeeded
+[2024-01-09T14:21:24.167Z] info: => page.goto started
+[2024-01-09T14:21:28.241Z] info: <= page.goto succeeded
+[2024-01-09T14:21:28.242Z] info: Navigate to url http://automationexercise.com
+[2024-01-09T14:21:28.243Z] info: => page.waitForLoadState started
+[2024-01-09T14:21:28.251Z] info: <= page.waitForLoadState succeeded
+[2024-01-09T14:21:28.253Z] info: => page.title started
+[2024-01-09T14:21:28.268Z] info: <= page.title succeeded
+[2024-01-09T14:21:28.272Z] info: Verify that home page is visible successfully
+[2024-01-09T14:21:28.278Z] info: => locator.textContent started
+[2024-01-09T14:21:28.300Z] info: <= locator.textContent succeeded
+[2024-01-09T14:21:28.301Z] info: => locator.textContent started
+[2024-01-09T14:21:28.305Z] info: <= locator.textContent succeeded
+[2024-01-09T14:21:28.306Z] info: => locator.textContent started
+[2024-01-09T14:21:28.311Z] info: <= locator.textContent succeeded
+[2024-01-09T14:21:28.312Z] info: => locator.textContent started
+[2024-01-09T14:21:28.316Z] info: <= locator.textContent succeeded
+[2024-01-09T14:21:28.316Z] info: => locator.textContent started
+[2024-01-09T14:21:28.320Z] info: <= locator.textContent succeeded
+[2024-01-09T14:21:28.320Z] info: => locator.textContent started
+[2024-01-09T14:22:13.925Z] info: => page.screenshot started
+[2024-01-09T14:22:14.203Z] info: <= page.screenshot succeeded
+[2024-01-09T14:22:14.228Z] info: <= locator.textContent failed
