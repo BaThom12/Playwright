@@ -11,6 +11,12 @@ btnContinueShopping : 'Continue Shopping',
 btnCViewCart : '//div[@id="cartModal"]//p//a[@href="/view_cart"]',
 txtFirstProductName : '//a[@data-product-id="1"]/../text',
 txtSecondProductName : '//a[@data-product-id="2"]/../text',
+btnViewProduct : '//a[@href="/product_details/1"]',
+txtQuantity : '#quantity',
+btnAddToCartInDetail : '//button[@class="btn btn-default cart"]',
+lblCategory : '//div[@class="left-sidebar"]/h2',
+lblCategoryWomen : '//a[@href="#Women"]',
+lblCategoryDress : '//a[@href="/category_products/2"]',
 
 }
 
@@ -28,6 +34,11 @@ export const variableProduct = {
   keySearch : "dress",
   searchTitle : "Searched Products",
   urlProduct : "https://automationexercise.com/products",
+  urlProductDetail : "https://automationexercise.com/product_details/1",
+  lblCategory : "Category",
+  urlCategory : "https://automationexercise.com/category_products/2",
+  lblTopProduct : "Women - Tops Products",
+  urlTshirt : "https://automationexercise.com/category_products/3",
 
 
 

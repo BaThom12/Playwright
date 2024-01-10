@@ -1,0 +1,17 @@
+[2024-01-10T07:04:30.155Z] info: => browser.newContext started
+[2024-01-10T07:04:30.164Z] info: <= browser.newContext succeeded
+[2024-01-10T07:04:30.168Z] info: => browserContext.newPage started
+[2024-01-10T07:04:30.393Z] info: <= browserContext.newPage succeeded
+[2024-01-10T07:04:30.399Z] info: => page.goto started
+[2024-01-10T07:05:00.789Z] info: <= page.goto succeeded
+[2024-01-10T07:05:00.790Z] info: Navigate to url http://automationexercise.com
+[2024-01-10T07:05:00.791Z] info: => page.waitForLoadState started
+[2024-01-10T07:05:00.797Z] info: <= page.waitForLoadState succeeded
+[2024-01-10T07:05:00.798Z] info: => page.title started
+[2024-01-10T07:05:00.806Z] info: <= page.title succeeded
+[2024-01-10T07:05:00.809Z] info: Verify that home page is visible successfully
+[2024-01-10T07:05:00.812Z] info: => locator.click started
+[2024-01-10T07:05:00.895Z] info: <= locator.click succeeded
+[2024-01-10T07:05:00.896Z] info: Click 'View Product' for any product on home page
+[2024-01-10T07:05:00.906Z] info: => page.screenshot started
+[2024-01-10T07:05:01.187Z] info: <= page.screenshot succeeded

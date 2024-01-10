@@ -1,0 +1,32 @@
+[2024-01-10T07:12:39.478Z] info: => browser.newContext started
+[2024-01-10T07:12:39.491Z] info: <= browser.newContext succeeded
+[2024-01-10T07:12:39.497Z] info: => browserContext.newPage started
+[2024-01-10T07:12:39.769Z] info: <= browserContext.newPage succeeded
+[2024-01-10T07:12:39.777Z] info: => page.goto started
+[2024-01-10T07:12:48.867Z] info: <= page.goto succeeded
+[2024-01-10T07:12:48.867Z] info: Navigate to url http://automationexercise.com
+[2024-01-10T07:12:48.868Z] info: => page.waitForLoadState started
+[2024-01-10T07:12:48.873Z] info: <= page.waitForLoadState succeeded
+[2024-01-10T07:12:48.874Z] info: => page.title started
+[2024-01-10T07:12:48.883Z] info: <= page.title succeeded
+[2024-01-10T07:12:48.886Z] info: Verify that home page is visible successfully
+[2024-01-10T07:12:48.890Z] info: => locator.click started
+[2024-01-10T07:12:49.785Z] info: <= locator.click succeeded
+[2024-01-10T07:12:49.785Z] info: Click 'View Product' for any product on home page
+[2024-01-10T07:12:49.785Z] info: Verify product detail is opened
+[2024-01-10T07:12:49.787Z] info: => locator.fill started
+[2024-01-10T07:12:49.853Z] info: <= locator.fill succeeded
+[2024-01-10T07:12:49.853Z] info:  Increase quantity to 4
+[2024-01-10T07:12:49.854Z] info: => locator.click started
+[2024-01-10T07:12:49.907Z] info: <= locator.click succeeded
+[2024-01-10T07:12:49.907Z] info: Click 'Add to cart' button
+[2024-01-10T07:12:49.907Z] info: => locator.click started
+[2024-01-10T07:12:51.063Z] info: <= locator.click succeeded
+[2024-01-10T07:12:51.064Z] info: Click 'View Cart' button
+[2024-01-10T07:12:51.064Z] info: => locator.textContent started
+[2024-01-10T07:12:51.074Z] info: <= locator.textContent succeeded
+[2024-01-10T07:12:51.075Z] info: => locator.textContent started
+[2024-01-10T07:12:51.079Z] info: <= locator.textContent succeeded
+[2024-01-10T07:12:51.080Z] info:  Verify that product is displayed in cart page with exact quantity
+[2024-01-10T07:12:51.082Z] info: => page.screenshot started
+[2024-01-10T07:12:51.188Z] info: <= page.screenshot succeeded

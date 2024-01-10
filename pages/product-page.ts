@@ -98,7 +98,44 @@ export class Product extends PageBase {
         
     }
     async verifyQuantityProductInCart() {
-
+        await this.page.locator(elementLocatorProduct.btnViewProduct).click();
+        this.logger.info("Click 'View Product' for any product on home page");
+        expect(this.page.url() == variableProduct.urlProductDetail);
+        this.logger.info("Verify product detail is opened");
+        await this.page.locator(elementLocatorProduct.txtQuantity).fill('4');
+        this.logger.info(" Increase quantity to 4");
+        await this.page.locator(elementLocatorProduct.btnAddToCartInDetail).click();
+        this.logger.info("Click 'Add to cart' button");
+        await this.page.locator(elementLocatorCart.btnViewCart).click();
+        this.logger.info("Click 'View Cart' button");
+        const nameProduct1InCart = await this.page.locator(elementLocatorCart.nameProduct).textContent();
+        const quantityProduct1 = await this.page.locator(elementLocatorCart.quantityProduct).first().textContent();
+        expect(nameProduct1InCart == variableProduct.lblNameProduct1);
+        expect(quantityProduct1 == '4');
+        this.logger.info(" Verify that product is displayed in cart page with exact quantity");
+    }
+    async removeProductInCart() {
+        await this.page.locator(elementLocatorCart.btnRemove).click();
+        await this.page.locator(elementLocatorCart.btnRemove).click();
+        expect(await this.page.locator(elementLocatorCart.lblEmpty).textContent() == variableCart.lblEmpty);
+        this.logger.info("Verify that product is removed from the cart"); 
+    }
+    async viewCategoryProduct() {
+        expect(await this.page.locator(elementLocatorProduct.lblCategory).textContent() == variableProduct.lblCategory);
+        this.logger.info("Verify that categories are visible on left side bar"); 
+        await this.page.locator(elementLocatorProduct.lblCategoryWomen).click();
+        this.logger.info("Click on 'Women' category");
+        await this.page.locator(elementLocatorProduct.lblCategoryDress).click();
+        this.logger.info("Click on any category link under 'Women' category, Tops");
+        expect(await this.page.url() == variableProduct.urlCategory);
+        expect(await this.page.getByText(variableProduct.lblTopProduct));
+        this.logger.info("Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'"); 
+        await this.page.locator(elementLocatorProduct.lblCategoryWomen.replace('Women','Men')).click();
+        this.logger.info("Click on 'Men' category");
+        await this.page.locator(elementLocatorProduct.lblCategoryDress.replace('2','3')).click();
+        this.logger.info("Click on any category link under 'Men' category, Tshirts");
+        expect(await this.page.url() == variableProduct.urlTshirt);
+        this.logger.info("Verify that user is navigated to that category page");
     }
 
    

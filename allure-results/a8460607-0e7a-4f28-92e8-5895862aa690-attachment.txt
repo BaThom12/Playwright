@@ -1,0 +1,61 @@
+[2024-01-10T07:04:22.557Z] info: => browser.newContext started
+[2024-01-10T07:04:22.580Z] info: <= browser.newContext succeeded
+[2024-01-10T07:04:22.591Z] info: => browserContext.newPage started
+[2024-01-10T07:04:22.862Z] info: <= browserContext.newPage succeeded
+[2024-01-10T07:04:22.881Z] info: => page.goto started
+[2024-01-10T07:04:26.378Z] info: <= page.goto succeeded
+[2024-01-10T07:04:26.378Z] info: Navigate to url http://automationexercise.com
+[2024-01-10T07:04:26.379Z] info: => page.waitForLoadState started
+[2024-01-10T07:04:26.384Z] info: <= page.waitForLoadState succeeded
+[2024-01-10T07:04:26.386Z] info: => page.title started
+[2024-01-10T07:04:26.398Z] info: <= page.title succeeded
+[2024-01-10T07:04:26.401Z] info: Verify that home page is visible successfully
+[2024-01-10T07:04:26.415Z] info: => locator.textContent started
+[2024-01-10T07:04:26.438Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:26.440Z] info: => locator.textContent started
+[2024-01-10T07:04:26.446Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:26.447Z] info: => locator.textContent started
+[2024-01-10T07:04:26.450Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:26.451Z] info: => locator.textContent started
+[2024-01-10T07:04:26.454Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:26.456Z] info: => locator.click started
+[2024-01-10T07:04:26.776Z] info: <= locator.click succeeded
+[2024-01-10T07:04:26.776Z] info: Click 'Products' button
+[2024-01-10T07:04:26.777Z] info: => page.waitForLoadState started
+[2024-01-10T07:04:26.824Z] info: <= page.waitForLoadState succeeded
+[2024-01-10T07:04:26.825Z] info: => locator.hover started
+[2024-01-10T07:04:26.909Z] info: <= locator.hover succeeded
+[2024-01-10T07:04:26.909Z] info: => locator.click started
+[2024-01-10T07:04:27.436Z] info: <= locator.click succeeded
+[2024-01-10T07:04:27.436Z] info: Hover over first product and click 'Add to cart'
+[2024-01-10T07:04:27.437Z] info: => locator.click started
+[2024-01-10T07:04:28.656Z] info: <= locator.click succeeded
+[2024-01-10T07:04:28.656Z] info: Click 'Continue Shopping' button
+[2024-01-10T07:04:28.657Z] info: => locator.hover started
+[2024-01-10T07:04:28.716Z] info: <= locator.hover succeeded
+[2024-01-10T07:04:28.716Z] info: => locator.click started
+[2024-01-10T07:04:29.261Z] info: <= locator.click succeeded
+[2024-01-10T07:04:29.262Z] info: Hover over second product and click 'Add to cart'
+[2024-01-10T07:04:29.263Z] info: => locator.click started
+[2024-01-10T07:04:29.940Z] info: <= locator.click succeeded
+[2024-01-10T07:04:29.940Z] info: Click 'View Cart' button
+[2024-01-10T07:04:29.941Z] info: => locator.textContent started
+[2024-01-10T07:04:29.965Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.965Z] info: => locator.textContent started
+[2024-01-10T07:04:29.968Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.968Z] info: => locator.textContent started
+[2024-01-10T07:04:29.970Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.971Z] info: => locator.textContent started
+[2024-01-10T07:04:29.973Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.973Z] info: => locator.textContent started
+[2024-01-10T07:04:29.976Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.977Z] info: => locator.textContent started
+[2024-01-10T07:04:29.980Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.980Z] info: => locator.textContent started
+[2024-01-10T07:04:29.983Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.983Z] info: => locator.textContent started
+[2024-01-10T07:04:29.985Z] info: <= locator.textContent succeeded
+[2024-01-10T07:04:29.985Z] info: Verify both products are added to Cart
+[2024-01-10T07:04:29.986Z] info: Verify their prices, quantity and total price
+[2024-01-10T07:04:29.988Z] info: => page.screenshot started
+[2024-01-10T07:04:30.089Z] info: <= page.screenshot succeeded

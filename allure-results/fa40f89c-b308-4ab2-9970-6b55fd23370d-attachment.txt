@@ -1,0 +1,29 @@
+[2024-01-10T07:10:06.368Z] info: => browser.newContext started
+[2024-01-10T07:10:06.377Z] info: <= browser.newContext succeeded
+[2024-01-10T07:10:06.381Z] info: => browserContext.newPage started
+[2024-01-10T07:10:06.558Z] info: <= browserContext.newPage succeeded
+[2024-01-10T07:10:06.565Z] info: => page.goto started
+[2024-01-10T07:10:10.994Z] info: <= page.goto succeeded
+[2024-01-10T07:10:10.995Z] info: Navigate to url http://automationexercise.com
+[2024-01-10T07:10:10.996Z] info: => page.waitForLoadState started
+[2024-01-10T07:10:11.000Z] info: <= page.waitForLoadState succeeded
+[2024-01-10T07:10:11.001Z] info: => page.title started
+[2024-01-10T07:10:11.009Z] info: <= page.title succeeded
+[2024-01-10T07:10:11.012Z] info: Verify that home page is visible successfully
+[2024-01-10T07:10:11.015Z] info: => locator.click started
+[2024-01-10T07:10:11.175Z] info: <= locator.click succeeded
+[2024-01-10T07:10:11.175Z] info: Click 'View Product' for any product on home page
+[2024-01-10T07:10:11.175Z] info: Verify product detail is opened
+[2024-01-10T07:10:11.177Z] info: => locator.fill started
+[2024-01-10T07:10:13.145Z] info: <= locator.fill succeeded
+[2024-01-10T07:10:13.145Z] info:  Increase quantity to 4
+[2024-01-10T07:10:13.146Z] info: => locator.click started
+[2024-01-10T07:10:13.201Z] info: <= locator.click succeeded
+[2024-01-10T07:10:13.201Z] info: Click 'Add to cart' button
+[2024-01-10T07:10:13.202Z] info: => locator.click started
+[2024-01-10T07:10:13.890Z] info: <= locator.click succeeded
+[2024-01-10T07:10:13.890Z] info: Click 'View Cart' button
+[2024-01-10T07:10:13.891Z] info: => locator.textContent started
+[2024-01-10T07:10:56.351Z] info: => page.screenshot started
+[2024-01-10T07:11:01.370Z] info: <= page.screenshot failed
+[2024-01-10T07:11:01.390Z] info: <= locator.textContent failed
