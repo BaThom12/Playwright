@@ -41,10 +41,23 @@ test.beforeEach(async ({ page }) => {
 //     await product.addProductInCart();
 //     await product.removeProductInCart();
 // });
-test('View Category Products', async ({ page }) => {
-    await allure.story("Category Products");
+// test('View Category Products', async ({ page }) => {
+//     await allure.story("Category Products");
+//     const product = new Product(page);
+//     await product.viewCategoryProduct();
+// });
+// test('View & Cart Brand Products', async ({ page }) => {
+//     await allure.story("Branch Products");
+//     const product = new Product(page);
+//     await product.viewBranchProduct();
+// });
+test('Search Products and Verify Cart After Login', async ({ page }) => {
+    await allure.story("Search Products and Verify Cart After Login");
     const product = new Product(page);
-    await product.viewCategoryProduct();
+    await product.navigateAllProduct();
+    await product.searchProduct();
+    await product.verifySearchProduct();
+    await product.addSearchProductToCart();
 });
 
 

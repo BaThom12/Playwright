@@ -1,0 +1,32 @@
+[2024-01-10T13:46:25.302Z] info: => browser.newContext started
+[2024-01-10T13:46:25.315Z] info: <= browser.newContext succeeded
+[2024-01-10T13:46:25.326Z] info: => browserContext.newPage started
+[2024-01-10T13:46:25.508Z] info: <= browserContext.newPage succeeded
+[2024-01-10T13:46:25.517Z] info: => page.goto started
+[2024-01-10T13:46:31.602Z] info: <= page.goto succeeded
+[2024-01-10T13:46:31.602Z] info: Navigate to url http://automationexercise.com
+[2024-01-10T13:46:31.604Z] info: => page.waitForLoadState started
+[2024-01-10T13:46:31.611Z] info: <= page.waitForLoadState succeeded
+[2024-01-10T13:46:31.613Z] info: => page.title started
+[2024-01-10T13:46:31.631Z] info: <= page.title succeeded
+[2024-01-10T13:46:31.635Z] info: Verify that home page is visible successfully
+[2024-01-10T13:46:31.637Z] info: => locator.click started
+[2024-01-10T13:46:31.738Z] info: <= locator.click succeeded
+[2024-01-10T13:46:31.739Z] info: Click 'Products' button
+[2024-01-10T13:46:31.739Z] info: => locator.textContent started
+[2024-01-10T13:46:31.748Z] info: <= locator.textContent succeeded
+[2024-01-10T13:46:31.749Z] info: Verify that Brands are visible on left side bar
+[2024-01-10T13:46:31.750Z] info: => locator.click started
+[2024-01-10T13:46:34.720Z] info: <= locator.click succeeded
+[2024-01-10T13:46:34.720Z] info: Click on Babyhug brand
+[2024-01-10T13:46:34.721Z] info: => locator.textContent started
+[2024-01-10T13:46:34.804Z] info: <= locator.textContent succeeded
+[2024-01-10T13:46:34.805Z] info: Verify that user is navigated to brand page and brand products are displayed
+[2024-01-10T13:46:34.806Z] info: => locator.click started
+[2024-01-10T13:46:35.223Z] info: <= locator.click succeeded
+[2024-01-10T13:46:35.223Z] info: Click on H&M brand
+[2024-01-10T13:46:35.225Z] info: => locator.textContent started
+[2024-01-10T13:46:35.285Z] info: <= locator.textContent succeeded
+[2024-01-10T13:46:35.285Z] info: Verify that user is navigated to that brand page and can see products
+[2024-01-10T13:46:35.288Z] info: => page.screenshot started
+[2024-01-10T13:46:35.464Z] info: <= page.screenshot succeeded

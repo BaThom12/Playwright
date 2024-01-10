@@ -17,6 +17,7 @@ btnAddToCartInDetail : '//button[@class="btn btn-default cart"]',
 lblCategory : '//div[@class="left-sidebar"]/h2',
 lblCategoryWomen : '//a[@href="#Women"]',
 lblCategoryDress : '//a[@href="/category_products/2"]',
+lblBranchBabyhug : '//h2[@class="title text-center"]',
 
 }
 
@@ -39,6 +40,11 @@ export const variableProduct = {
   urlCategory : "https://automationexercise.com/category_products/2",
   lblTopProduct : "Women - Tops Products",
   urlTshirt : "https://automationexercise.com/category_products/3",
+  lblBranch : "Brands",
+  urlBranchBabyhug : "https://automationexercise.com/brand_products/Babyhug",
+  lblBranchBabyhug : "Brand - Babyhug Products",
+  urlBranchHM : "https://automationexercise.com/brand_products/H&M",
+  lblBranchHM : "Brand - H&M Products",
 
 
 
