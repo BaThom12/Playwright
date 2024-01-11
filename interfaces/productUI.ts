@@ -7,7 +7,8 @@ product : '(//div[@class="col-sm-4"])[2]',
 product2 : '(//div[@class="product-overlay"])[2]',
 //btnAddToCart : '(//div[@class="product-overlay"]//a[@data-product-id="1"])[1]',
 btnAddToCart : '(//a[contains(text(),"Add to cart")])[2]',
-btnContinueShopping : 'Continue Shopping',
+//btnContinueShopping : 'Continue Shopping',
+btnContinueShopping : '//div[@id="cartModal"]//button[@class="btn btn-success close-modal btn-block"]',
 btnCViewCart : '//div[@id="cartModal"]//p//a[@href="/view_cart"]',
 txtFirstProductName : '//a[@data-product-id="1"]/../text',
 txtSecondProductName : '//a[@data-product-id="2"]/../text',
@@ -18,6 +19,8 @@ lblCategory : '//div[@class="left-sidebar"]/h2',
 lblCategoryWomen : '//a[@href="#Women"]',
 lblCategoryDress : '//a[@href="/category_products/2"]',
 lblBranchBabyhug : '//h2[@class="title text-center"]',
+areaSearchProduct : '(//div[@class="col-sm-4"])[index]',
+btnAddToCartSearchProduct : '(//div[@class="product-overlay"]//a[@class="btn btn-default add-to-cart"])[index]',
 
 }
 

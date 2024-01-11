@@ -161,27 +161,66 @@ export class Product extends PageBase {
             this.logger.info("productName: " + productName);
             arrNameSearchProduct.push(productName);
         }
-        for (let i = 2; i < 11; i++) {
-            if(i=2){
-                await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-                await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2',i.toString())).click();
-                await this.page.getByText(elementLocatorProduct.btnContinueShopping).click();
-            }else{
-            if(i<10){
-                await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-                await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i+2).toString())).click();
-                await this.page.getByText(elementLocatorProduct.btnContinueShopping).click();
-            }else{
-                await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-                await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i+2).toString())).click();
-                await this.page.getByText(elementLocatorProduct.btnCViewCart).click();
-            }
-            
-        }
 
+        for (let i = 1; i < 10; i++) {
+            await this.page.locator(elementLocatorProduct.areaSearchProduct.replace('index', (i+1).toString())).hover();
+            await this.page.locator(elementLocatorProduct.btnAddToCartSearchProduct.replace('index', i.toString())).click();
+            await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
+        }
+        await this.page.locator(elementLocatorProduct.btnCViewCart).click();
+        let count = 0;
+        for (let i = 1; i < 10; i++) {
+            let productName = await this.page.locator(elementLocatorCart.nameSearchProduct.replace('index', i.toString())).textContent();
+           if(productName == arrNameSearchProduct[i]){
+            count += 1;
+           }
+        }
+        if(count == arrNameSearchProduct.length){
+            this.logger.info("verify that products are visible in cart");
+        }
+        // for (let i = 1; i < 50; i++) {
+        //     switch (i) {
+        //         case 3:
+        //         case 4:
+        //         case 16:
+        //         case 19:
+        //         case 20:
+        //         case 21:
+        //         case 22:
+        //         case 23:
+        //             {
+        //                 await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
+        //                 await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', i.toString())).click();
+        //                 await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
+        //                 break;
+        //             }
+        //         case 38: {
+        //             await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
+        //             await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i.toString())).click();
+        //             await this.page.getByText(elementLocatorProduct.btnCViewCart).click();
+        //         }
+        //     }
+        //     // if (i = 2) {
+            //     await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
+            //     await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', i.toString())).click();
+            //     await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
+            // } else {
+            //     if (i < 10) {
+            //         await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
+            //         await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i + 2).toString())).click();
+            //         //await this.page.getByText(elementLocatorProduct.btnContinueShopping).click();
+            //         await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
+            //     } else {
+            //         await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
+            //         await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i + 2).toString())).click();
+            //         await this.page.getByText(elementLocatorProduct.btnCViewCart).click();
+            //     }
+
+            // }
+
+
+        
+    
 
     }
-
-
-}
 }

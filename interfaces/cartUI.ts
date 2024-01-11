@@ -6,6 +6,7 @@ totalPriceProduct : '(//td[@class="cart_total"]/p)[1]',
 btnViewCart : '//div[@id="cartModal"]//p//a[@href="/view_cart"]',
 btnRemove : '(//a[@class="cart_quantity_delete"])[1]',
 lblEmpty : '//span[@id="empty_cart"]/p/b',
+nameSearchProduct : '(//td[@class="cart_description"]//a)[index]',
 
 }
 
