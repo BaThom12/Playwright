@@ -21,6 +21,13 @@ lblCategoryDress : '//a[@href="/category_products/2"]',
 lblBranchBabyhug : '//h2[@class="title text-center"]',
 areaSearchProduct : '(//div[@class="col-sm-4"])[index]',
 btnAddToCartSearchProduct : '(//div[@class="product-overlay"]//a[@class="btn btn-default add-to-cart"])[index]',
+txtNameReviewer : '#name',
+txtEmailReviewer : '#email',
+tarContentReview : '#review',
+btnReview : '#button-review',
+lblRecommended : 'recommended items',
+btnAddToCartRecommended : '//div[@id="recommended-item-carousel"]//a[@data-product-id="1"]',
+
 
 }
 
@@ -48,7 +55,11 @@ export const variableProduct = {
   lblBranchBabyhug : "Brand - Babyhug Products",
   urlBranchHM : "https://automationexercise.com/brand_products/H&M",
   lblBranchHM : "Brand - H&M Products",
-
+  lblReview : "Write Your Review",
+  NameReviewer : randomstring.generate(10),
+  EmailReviewer : randomstring.generate(10)+Math.floor((Math.random() * 1000) + 1)+'@gmail.com',
+  ContentReview : 'Review product',
+  messageReviewSuccessfull : "Thank you for your review.",
 
 
 

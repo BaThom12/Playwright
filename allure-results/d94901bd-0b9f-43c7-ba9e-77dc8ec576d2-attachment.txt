@@ -1,0 +1,42 @@
+[2024-01-11T14:42:59.171Z] info: => browser.newContext started
+[2024-01-11T14:42:59.190Z] info: <= browser.newContext succeeded
+[2024-01-11T14:42:59.198Z] info: => browserContext.newPage started
+[2024-01-11T14:42:59.387Z] info: <= browserContext.newPage succeeded
+[2024-01-11T14:42:59.403Z] info: => page.goto started
+[2024-01-11T14:43:08.660Z] info: <= page.goto succeeded
+[2024-01-11T14:43:08.661Z] info: Navigate to url http://automationexercise.com
+[2024-01-11T14:43:08.665Z] info: => page.waitForLoadState started
+[2024-01-11T14:43:08.685Z] info: <= page.waitForLoadState succeeded
+[2024-01-11T14:43:08.690Z] info: => page.title started
+[2024-01-11T14:43:08.720Z] info: <= page.title succeeded
+[2024-01-11T14:43:08.734Z] info: Verify that home page is visible successfully
+[2024-01-11T14:43:08.763Z] info: => locator.click started
+[2024-01-11T14:43:08.974Z] info: <= locator.click succeeded
+[2024-01-11T14:43:08.974Z] info: Click on 'Products' button
+[2024-01-11T14:43:08.982Z] info: => page.waitForLoadState started
+[2024-01-11T14:43:09.001Z] info: <= page.waitForLoadState succeeded
+[2024-01-11T14:43:09.002Z] info: Verify user is navigated to ALL PRODUCTS page successfully
+[2024-01-11T14:43:09.023Z] info: => expect.toBeVisible started
+[2024-01-11T14:43:09.025Z] info: The products list is visible
+[2024-01-11T14:43:09.029Z] info: => locator.click started
+[2024-01-11T14:43:11.123Z] info: <= expect.toBeVisible succeeded
+[2024-01-11T14:43:12.025Z] info: <= locator.click succeeded
+[2024-01-11T14:43:12.026Z] info: Click on 'View Product' button
+[2024-01-11T14:43:12.028Z] info: => locator.textContent started
+[2024-01-11T14:43:12.081Z] info: <= locator.textContent succeeded
+[2024-01-11T14:43:12.082Z] info: Verify 'Write Your Review' is visible
+[2024-01-11T14:43:12.084Z] info: => locator.fill started
+[2024-01-11T14:43:12.146Z] info: <= locator.fill succeeded
+[2024-01-11T14:43:12.149Z] info: => locator.fill started
+[2024-01-11T14:43:12.190Z] info: <= locator.fill succeeded
+[2024-01-11T14:43:12.192Z] info: => locator.fill started
+[2024-01-11T14:43:12.227Z] info: <= locator.fill succeeded
+[2024-01-11T14:43:12.227Z] info: Enter name, email and review
+[2024-01-11T14:43:12.230Z] info: => locator.click started
+[2024-01-11T14:43:12.297Z] info: <= locator.click succeeded
+[2024-01-11T14:43:12.297Z] info: Click 'Submit' button
+[2024-01-11T14:43:12.303Z] info: => expect.toBeVisible started
+[2024-01-11T14:43:12.304Z] info: Verify success message 'Thank you for your review.'
+[2024-01-11T14:43:12.313Z] info: => page.screenshot started
+[2024-01-11T14:43:12.331Z] info: <= expect.toBeVisible succeeded
+[2024-01-11T14:43:12.590Z] info: <= page.screenshot succeeded

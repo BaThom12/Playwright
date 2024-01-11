@@ -1,0 +1,179 @@
+[2024-01-11T13:41:33.806Z] info: => browser.newContext started
+[2024-01-11T13:41:33.825Z] info: <= browser.newContext succeeded
+[2024-01-11T13:41:33.832Z] info: => browserContext.newPage started
+[2024-01-11T13:41:34.035Z] info: <= browserContext.newPage succeeded
+[2024-01-11T13:41:34.050Z] info: => page.goto started
+[2024-01-11T13:41:39.883Z] info: <= page.goto succeeded
+[2024-01-11T13:41:39.884Z] info: Navigate to url http://automationexercise.com
+[2024-01-11T13:41:39.888Z] info: => page.waitForLoadState started
+[2024-01-11T13:41:39.904Z] info: <= page.waitForLoadState succeeded
+[2024-01-11T13:41:39.909Z] info: => page.title started
+[2024-01-11T13:41:39.932Z] info: <= page.title succeeded
+[2024-01-11T13:41:39.941Z] info: Verify that home page is visible successfully
+[2024-01-11T13:41:39.955Z] info: => locator.click started
+[2024-01-11T13:41:40.102Z] info: <= locator.click succeeded
+[2024-01-11T13:41:40.102Z] info: Click on 'Products' button
+[2024-01-11T13:41:40.106Z] info: => page.waitForLoadState started
+[2024-01-11T13:41:40.113Z] info: <= page.waitForLoadState succeeded
+[2024-01-11T13:41:40.115Z] info: Verify user is navigated to ALL PRODUCTS page successfully
+[2024-01-11T13:41:40.131Z] info: => expect.toBeVisible started
+[2024-01-11T13:41:40.132Z] info: The products list is visible
+[2024-01-11T13:41:40.135Z] info: => locator.fill started
+[2024-01-11T13:41:43.280Z] info: <= expect.toBeVisible succeeded
+[2024-01-11T13:41:43.622Z] info: <= locator.fill succeeded
+[2024-01-11T13:41:43.624Z] info: => locator.click started
+[2024-01-11T13:41:44.427Z] info: <= locator.click succeeded
+[2024-01-11T13:41:44.428Z] info: Enter product name in search input and click search button
+[2024-01-11T13:41:44.434Z] info: => expect.toBeVisible started
+[2024-01-11T13:41:44.435Z] info: Verify 'SEARCHED PRODUCTS' is visible
+[2024-01-11T13:41:44.439Z] info: => locator.textContent started
+[2024-01-11T13:41:44.484Z] info: <= expect.toBeVisible succeeded
+[2024-01-11T13:41:44.486Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.487Z] info: productName: Sleeveless Dress
+[2024-01-11T13:41:44.487Z] info: productName of array: Sleeveless Dress
+[2024-01-11T13:41:44.490Z] info: => locator.textContent started
+[2024-01-11T13:41:44.504Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.504Z] info: productName: Stylish Dress
+[2024-01-11T13:41:44.505Z] info: productName of array: Stylish Dress
+[2024-01-11T13:41:44.507Z] info: => locator.textContent started
+[2024-01-11T13:41:44.516Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.516Z] info: productName: Sleeves Top and Short - Blue & Pink
+[2024-01-11T13:41:44.516Z] info: productName of array: Sleeves Top and Short - Blue & Pink
+[2024-01-11T13:41:44.519Z] info: => locator.textContent started
+[2024-01-11T13:41:44.527Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.528Z] info: productName: Sleeveless Unicorn Patch Gown - Pink
+[2024-01-11T13:41:44.528Z] info: productName of array: Sleeveless Unicorn Patch Gown - Pink
+[2024-01-11T13:41:44.530Z] info: => locator.textContent started
+[2024-01-11T13:41:44.539Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.539Z] info: productName: Cotton Mull Embroidered Dress
+[2024-01-11T13:41:44.540Z] info: productName of array: Cotton Mull Embroidered Dress
+[2024-01-11T13:41:44.542Z] info: => locator.textContent started
+[2024-01-11T13:41:44.557Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.557Z] info: productName: Blue Cotton Indie Mickey Dress
+[2024-01-11T13:41:44.558Z] info: productName of array: Blue Cotton Indie Mickey Dress
+[2024-01-11T13:41:44.559Z] info: => locator.textContent started
+[2024-01-11T13:41:44.566Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.566Z] info: productName: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+[2024-01-11T13:41:44.567Z] info: productName of array: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+[2024-01-11T13:41:44.568Z] info: => locator.textContent started
+[2024-01-11T13:41:44.579Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.579Z] info: productName: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+[2024-01-11T13:41:44.579Z] info: productName of array: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+[2024-01-11T13:41:44.582Z] info: => locator.textContent started
+[2024-01-11T13:41:44.590Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.590Z] info: productName: Rose Pink Embroidered Maxi Dress
+[2024-01-11T13:41:44.591Z] info: productName of array: Rose Pink Embroidered Maxi Dress
+[2024-01-11T13:41:44.591Z] info: Verify all the products related to search are visible
+[2024-01-11T13:41:44.593Z] info: => locator.textContent started
+[2024-01-11T13:41:44.600Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.600Z] info: productName: Sleeveless Dress
+[2024-01-11T13:41:44.603Z] info: => locator.textContent started
+[2024-01-11T13:41:44.614Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.615Z] info: productName: Stylish Dress
+[2024-01-11T13:41:44.617Z] info: => locator.textContent started
+[2024-01-11T13:41:44.629Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.629Z] info: productName: Sleeves Top and Short - Blue & Pink
+[2024-01-11T13:41:44.632Z] info: => locator.textContent started
+[2024-01-11T13:41:44.641Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.641Z] info: productName: Sleeveless Unicorn Patch Gown - Pink
+[2024-01-11T13:41:44.643Z] info: => locator.textContent started
+[2024-01-11T13:41:44.650Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.651Z] info: productName: Cotton Mull Embroidered Dress
+[2024-01-11T13:41:44.654Z] info: => locator.textContent started
+[2024-01-11T13:41:44.664Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.665Z] info: productName: Blue Cotton Indie Mickey Dress
+[2024-01-11T13:41:44.667Z] info: => locator.textContent started
+[2024-01-11T13:41:44.678Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.678Z] info: productName: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+[2024-01-11T13:41:44.681Z] info: => locator.textContent started
+[2024-01-11T13:41:44.695Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.696Z] info: productName: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+[2024-01-11T13:41:44.698Z] info: => locator.textContent started
+[2024-01-11T13:41:44.707Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:44.708Z] info: productName: Rose Pink Embroidered Maxi Dress
+[2024-01-11T13:41:44.710Z] info: => locator.hover started
+[2024-01-11T13:41:44.760Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:44.763Z] info: => locator.click started
+[2024-01-11T13:41:45.302Z] info: <= locator.click succeeded
+[2024-01-11T13:41:45.304Z] info: => locator.click started
+[2024-01-11T13:41:45.661Z] info: <= locator.click succeeded
+[2024-01-11T13:41:45.662Z] info: => locator.hover started
+[2024-01-11T13:41:45.744Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:45.745Z] info: => locator.click started
+[2024-01-11T13:41:46.279Z] info: <= locator.click succeeded
+[2024-01-11T13:41:46.280Z] info: => locator.click started
+[2024-01-11T13:41:46.612Z] info: <= locator.click succeeded
+[2024-01-11T13:41:46.614Z] info: => locator.hover started
+[2024-01-11T13:41:46.695Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:46.697Z] info: => locator.click started
+[2024-01-11T13:41:47.231Z] info: <= locator.click succeeded
+[2024-01-11T13:41:47.234Z] info: => locator.click started
+[2024-01-11T13:41:47.625Z] info: <= locator.click succeeded
+[2024-01-11T13:41:47.627Z] info: => locator.hover started
+[2024-01-11T13:41:47.691Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:47.693Z] info: => locator.click started
+[2024-01-11T13:41:48.230Z] info: <= locator.click succeeded
+[2024-01-11T13:41:48.232Z] info: => locator.click started
+[2024-01-11T13:41:48.644Z] info: <= locator.click succeeded
+[2024-01-11T13:41:48.647Z] info: => locator.hover started
+[2024-01-11T13:41:48.708Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:48.711Z] info: => locator.click started
+[2024-01-11T13:41:49.243Z] info: <= locator.click succeeded
+[2024-01-11T13:41:49.245Z] info: => locator.click started
+[2024-01-11T13:41:49.563Z] info: <= locator.click succeeded
+[2024-01-11T13:41:49.565Z] info: => locator.hover started
+[2024-01-11T13:41:49.643Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:49.645Z] info: => locator.click started
+[2024-01-11T13:41:50.193Z] info: <= locator.click succeeded
+[2024-01-11T13:41:50.195Z] info: => locator.click started
+[2024-01-11T13:41:50.511Z] info: <= locator.click succeeded
+[2024-01-11T13:41:50.513Z] info: => locator.hover started
+[2024-01-11T13:41:50.575Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:50.577Z] info: => locator.click started
+[2024-01-11T13:41:51.109Z] info: <= locator.click succeeded
+[2024-01-11T13:41:51.111Z] info: => locator.click started
+[2024-01-11T13:41:51.431Z] info: <= locator.click succeeded
+[2024-01-11T13:41:51.433Z] info: => locator.hover started
+[2024-01-11T13:41:51.509Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:51.511Z] info: => locator.click started
+[2024-01-11T13:41:52.042Z] info: <= locator.click succeeded
+[2024-01-11T13:41:52.044Z] info: => locator.click started
+[2024-01-11T13:41:52.544Z] info: <= locator.click succeeded
+[2024-01-11T13:41:52.546Z] info: => locator.hover started
+[2024-01-11T13:41:52.626Z] info: <= locator.hover succeeded
+[2024-01-11T13:41:52.628Z] info: => locator.click started
+[2024-01-11T13:41:53.159Z] info: <= locator.click succeeded
+[2024-01-11T13:41:53.160Z] info: => locator.click started
+[2024-01-11T13:41:53.525Z] info: <= locator.click succeeded
+[2024-01-11T13:41:53.528Z] info: => locator.click started
+[2024-01-11T13:41:53.921Z] info: <= locator.click succeeded
+[2024-01-11T13:41:53.922Z] info: => locator.textContent started
+[2024-01-11T13:41:54.034Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.034Z] info: productName: Sleeveless Dress
+[2024-01-11T13:41:54.036Z] info: => locator.textContent started
+[2024-01-11T13:41:54.042Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.043Z] info: productName: Stylish Dress
+[2024-01-11T13:41:54.044Z] info: => locator.textContent started
+[2024-01-11T13:41:54.052Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.052Z] info: productName: Sleeves Top and Short - Blue & Pink
+[2024-01-11T13:41:54.054Z] info: => locator.textContent started
+[2024-01-11T13:41:54.061Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.062Z] info: productName: Sleeveless Unicorn Patch Gown - Pink
+[2024-01-11T13:41:54.063Z] info: => locator.textContent started
+[2024-01-11T13:41:54.072Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.072Z] info: productName: Cotton Mull Embroidered Dress
+[2024-01-11T13:41:54.074Z] info: => locator.textContent started
+[2024-01-11T13:41:54.082Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.083Z] info: productName: Blue Cotton Indie Mickey Dress
+[2024-01-11T13:41:54.085Z] info: => locator.textContent started
+[2024-01-11T13:41:54.094Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.096Z] info: productName: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+[2024-01-11T13:41:54.098Z] info: => locator.textContent started
+[2024-01-11T13:41:54.110Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.110Z] info: productName: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+[2024-01-11T13:41:54.112Z] info: => locator.textContent started
+[2024-01-11T13:41:54.119Z] info: <= locator.textContent succeeded
+[2024-01-11T13:41:54.119Z] info: productName: Rose Pink Embroidered Maxi Dress
+[2024-01-11T13:41:54.120Z] info: count: 0
+[2024-01-11T13:41:54.129Z] info: => page.screenshot started
+[2024-01-11T13:41:54.303Z] info: <= page.screenshot succeeded

@@ -1,0 +1,31 @@
+[2024-01-11T14:33:59.922Z] info: => browser.newContext started
+[2024-01-11T14:33:59.940Z] info: <= browser.newContext succeeded
+[2024-01-11T14:33:59.947Z] info: => browserContext.newPage started
+[2024-01-11T14:34:00.132Z] info: <= browserContext.newPage succeeded
+[2024-01-11T14:34:00.146Z] info: => page.goto started
+[2024-01-11T14:34:06.684Z] info: <= page.goto succeeded
+[2024-01-11T14:34:06.685Z] info: Navigate to url http://automationexercise.com
+[2024-01-11T14:34:06.689Z] info: => page.waitForLoadState started
+[2024-01-11T14:34:06.708Z] info: <= page.waitForLoadState succeeded
+[2024-01-11T14:34:06.711Z] info: => page.title started
+[2024-01-11T14:34:06.735Z] info: <= page.title succeeded
+[2024-01-11T14:34:06.740Z] info: Verify that home page is visible successfully
+[2024-01-11T14:34:06.751Z] info: => locator.click started
+[2024-01-11T14:34:06.855Z] info: <= locator.click succeeded
+[2024-01-11T14:34:06.855Z] info: Click on 'Products' button
+[2024-01-11T14:34:06.859Z] info: => page.waitForLoadState started
+[2024-01-11T14:34:06.870Z] info: <= page.waitForLoadState succeeded
+[2024-01-11T14:34:06.870Z] info: Verify user is navigated to ALL PRODUCTS page successfully
+[2024-01-11T14:34:06.891Z] info: => expect.toBeVisible started
+[2024-01-11T14:34:06.892Z] info: The products list is visible
+[2024-01-11T14:34:06.894Z] info: => locator.click started
+[2024-01-11T14:34:08.912Z] info: <= expect.toBeVisible succeeded
+[2024-01-11T14:34:11.508Z] info: <= locator.click succeeded
+[2024-01-11T14:34:11.508Z] info: Click on 'View Product' button
+[2024-01-11T14:34:11.510Z] info: => locator.textContent started
+[2024-01-11T14:34:11.586Z] info: <= locator.textContent succeeded
+[2024-01-11T14:34:11.587Z] info: Verify 'Write Your Review' is visible
+[2024-01-11T14:34:11.589Z] info: => locator.fill started
+[2024-01-11T14:34:49.877Z] info: => page.screenshot started
+[2024-01-11T14:34:50.143Z] info: <= page.screenshot succeeded
+[2024-01-11T14:34:50.189Z] info: <= locator.fill failed

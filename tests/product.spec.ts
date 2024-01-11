@@ -51,13 +51,24 @@ test.beforeEach(async ({ page }) => {
 //     const product = new Product(page);
 //     await product.viewBranchProduct();
 // });
-test('Search Products and Verify Cart After Login', async ({ page }) => {
-    await allure.story("Search Products and Verify Cart After Login");
+// test('Search Products and Verify Cart After Login', async ({ page }) => {
+//     await allure.story("Search Products and Verify Cart After Login");
+//     const product = new Product(page);
+//     await product.navigateAllProduct();
+//     await product.searchProduct();
+//     await product.verifySearchProduct();
+//     await product.addSearchProductToCart();
+// });
+// test('Add review on product', async ({ page }) => {
+//     await allure.story("Add review on product");
+//     const product = new Product(page);
+//     await product.navigateAllProduct();
+//     await product.reviewProduct();
+// });
+test('Add to cart from Recommended items', async ({ page }) => {
+    await allure.story("Add to cart from Recommended items");
     const product = new Product(page);
-    await product.navigateAllProduct();
-    await product.searchProduct();
-    await product.verifySearchProduct();
-    await product.addSearchProductToCart();
+    await product.addToCartRecommendedProduct();
 });
 
 

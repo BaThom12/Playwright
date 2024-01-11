@@ -167,60 +167,60 @@ export class Product extends PageBase {
             await this.page.locator(elementLocatorProduct.btnAddToCartSearchProduct.replace('index', i.toString())).click();
             await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
         }
-        await this.page.locator(elementLocatorProduct.btnCViewCart).click();
+        await this.page.locator(elementLocatorProduct.hplProduct.replace('products','view_cart')).first().click();
         let count = 0;
+        const arrNameSearchProductInCart: any = [];
         for (let i = 1; i < 10; i++) {
-            let productName = await this.page.locator(elementLocatorCart.nameSearchProduct.replace('index', i.toString())).textContent();
-           if(productName == arrNameSearchProduct[i]){
-            count += 1;
-           }
+            let productNameCart = await this.page.locator(elementLocatorCart.nameSearchProduct.replace('index', i.toString())).textContent();
+            arrNameSearchProductInCart.push(productNameCart)
         }
+        for (let i = 1; i < 10; i++) {
+            if(arrNameSearchProduct[i]==arrNameSearchProductInCart[i]){
+                count +=1;
+            }
+        }
+        this.logger.info("count: "+count);
         if(count == arrNameSearchProduct.length){
             this.logger.info("verify that products are visible in cart");
         }
-        // for (let i = 1; i < 50; i++) {
-        //     switch (i) {
-        //         case 3:
-        //         case 4:
-        //         case 16:
-        //         case 19:
-        //         case 20:
-        //         case 21:
-        //         case 22:
-        //         case 23:
-        //             {
-        //                 await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-        //                 await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', i.toString())).click();
-        //                 await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
-        //                 break;
-        //             }
-        //         case 38: {
-        //             await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-        //             await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i.toString())).click();
-        //             await this.page.getByText(elementLocatorProduct.btnCViewCart).click();
-        //         }
-        //     }
-        //     // if (i = 2) {
-            //     await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-            //     await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', i.toString())).click();
-            //     await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
-            // } else {
-            //     if (i < 10) {
-            //         await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-            //         await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i + 2).toString())).click();
-            //         //await this.page.getByText(elementLocatorProduct.btnContinueShopping).click();
-            //         await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
-            //     } else {
-            //         await this.page.locator(elementLocatorProduct.product.replace('2', i.toString())).hover();
-            //         await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', (i + 2).toString())).click();
-            //         await this.page.getByText(elementLocatorProduct.btnCViewCart).click();
-            //     }
-
-            // }
-
-
-        
-    
-
+        await this.page.locator(elementLocatorProduct.hplProduct.replace('products','login')).first().click();
+        this.logger.info("Click 'Signup / Login' button");
+        await this.page.locator(elementLocatorProduct.hplProduct.replace('products','view_cart')).first().click();
+        this.logger.info("Again, go to Cart page");
+        let countAfter = 0;
+        for (let i = 1; i < 10; i++) {
+            if(arrNameSearchProduct[i]==arrNameSearchProductInCart[i]){
+                countAfter +=1;
+            }
+        }
+        this.logger.info("countAfter: "+countAfter);
+        if(countAfter == arrNameSearchProduct.length){
+            this.logger.info("Verify that those products are visible in cart after login as well");
+        }
+    }
+    async reviewProduct() {
+        await this.page.locator(elementLocatorProduct.hplProduct.replace('products','product_details/1')).first().click();
+        this.logger.info("Click on 'View Product' button");
+        const lblReview = await this.page.locator(elementLocatorProduct.hplProduct.replace('/products','#reviews')).textContent();
+        expect(lblReview == variableProduct.lblReview);
+        this.logger.info("Verify 'Write Your Review' is visible");
+        await this.page.locator(elementLocatorProduct.txtNameReviewer).fill(variableProduct.NameReviewer);
+        await this.page.locator(elementLocatorProduct.txtEmailReviewer).fill(variableProduct.EmailReviewer);
+        await this.page.locator(elementLocatorProduct.tarContentReview).fill(variableProduct.ContentReview);
+        this.logger.info("Enter name, email and review");
+        await this.page.locator(elementLocatorProduct.btnReview).first().click();
+        this.logger.info("Click 'Submit' button");
+        expect(await this.page.getByText(variableProduct.messageReviewSuccessfull)).toBeVisible();
+        this.logger.info("Verify success message 'Thank you for your review.'");  
+    }
+    async addToCartRecommendedProduct() {
+        expect(await this.page.getByText(elementLocatorProduct.lblRecommended)).toBeVisible();
+        this.logger.info("Verify 'RECOMMENDED ITEMS' are visible");
+        await this.page.locator(elementLocatorProduct.btnAddToCartRecommended).click();
+        this.logger.info("Click on 'Add To Cart' on Recommended product");
+        await this.page.locator(elementLocatorProduct.btnCViewCart).click();
+        this.logger.info("Click on 'View Cart' button");
+        expect(await this.page.getByText(variableProduct.lblNameProduct1)).toBeVisible();
+        this.logger.info("Verify that product is displayed in cart page");  
     }
 }
