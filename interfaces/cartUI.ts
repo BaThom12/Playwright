@@ -7,6 +7,9 @@ btnViewCart : '//div[@id="cartModal"]//p//a[@href="/view_cart"]',
 btnRemove : '(//a[@class="cart_quantity_delete"])[1]',
 lblEmpty : '//span[@id="empty_cart"]/p/b',
 nameSearchProduct : '(//td[@class="cart_description"]//a)[index]',
+btnProceedToCheckout : '//a[@class="btn btn-default check_out"]',
+lblDeliveryAddress : '(//ul[@id="address_delivery"]//li[@class="address_address1 address_address2"])[index]',
+lblBillingAddress : '(//ul[@id="address_invoice"]//li[@class="address_address1 address_address2"])[index]"]',
 
 }
 
