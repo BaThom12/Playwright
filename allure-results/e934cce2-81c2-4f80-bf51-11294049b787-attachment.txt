@@ -1,0 +1,39 @@
+[2024-01-13T09:49:19.612Z] info: => browser.newContext started
+[2024-01-13T09:49:19.629Z] info: <= browser.newContext succeeded
+[2024-01-13T09:49:19.636Z] info: => browserContext.newPage started
+[2024-01-13T09:49:19.823Z] info: <= browserContext.newPage succeeded
+[2024-01-13T09:49:19.839Z] info: => page.goto started
+[2024-01-13T09:49:25.587Z] info: <= page.goto succeeded
+[2024-01-13T09:49:25.588Z] info: Navigate to url http://automationexercise.com
+[2024-01-13T09:49:25.589Z] info: => page.waitForLoadState started
+[2024-01-13T09:49:25.599Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T09:49:25.602Z] info: => page.title started
+[2024-01-13T09:49:25.620Z] info: <= page.title succeeded
+[2024-01-13T09:49:25.624Z] info: Verify that home page is visible successfully
+[2024-01-13T09:49:25.630Z] info: => locator.textContent started
+[2024-01-13T09:49:25.637Z] info: => locator.click started
+[2024-01-13T09:49:25.667Z] info: <= locator.textContent succeeded
+[2024-01-13T09:49:25.668Z] info: => locator.textContent started
+[2024-01-13T09:49:25.672Z] info: <= locator.textContent succeeded
+[2024-01-13T09:49:25.673Z] info: => locator.textContent started
+[2024-01-13T09:49:25.680Z] info: <= locator.textContent succeeded
+[2024-01-13T09:49:25.681Z] info: => locator.textContent started
+[2024-01-13T09:49:25.685Z] info: <= locator.textContent succeeded
+[2024-01-13T09:49:25.685Z] info: => locator.click started
+[2024-01-13T09:49:25.786Z] info: <= locator.click succeeded
+[2024-01-13T09:49:25.786Z] info: Click 'Products' button
+[2024-01-13T09:49:25.787Z] info: => page.waitForLoadState started
+[2024-01-13T09:49:25.795Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T09:49:25.797Z] info: => locator.hover started
+[2024-01-13T09:49:28.351Z] info: <= locator.hover succeeded
+[2024-01-13T09:49:28.353Z] info: => locator.click started
+[2024-01-13T09:49:28.891Z] info: <= locator.click succeeded
+[2024-01-13T09:49:28.892Z] info: Hover over first product and click 'Add to cart'
+[2024-01-13T09:49:28.893Z] info: => locator.click started
+[2024-01-13T09:49:29.335Z] info: <= locator.click succeeded
+[2024-01-13T09:49:29.335Z] info: Click 'Continue Shopping' button
+[2024-01-13T09:49:29.336Z] info: => locator.hover started
+[2024-01-13T09:49:29.408Z] info: <= locator.hover succeeded
+[2024-01-13T09:49:29.410Z] info: => locator.click started
+[2024-01-13T09:49:34.503Z] info: <= locator.click failed
+[2024-01-13T09:49:34.516Z] info: <= locator.click failed

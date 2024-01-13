@@ -1,0 +1,8 @@
+[2024-01-13T03:07:31.991Z] info: => browser.newContext started
+[2024-01-13T03:07:31.997Z] info: <= browser.newContext succeeded
+[2024-01-13T03:07:32.001Z] info: => browserContext.newPage started
+[2024-01-13T03:07:32.161Z] info: <= browserContext.newPage succeeded
+[2024-01-13T03:07:32.165Z] info: => page.goto started
+[2024-01-13T03:07:33.303Z] info: <= page.goto failed
+[2024-01-13T03:07:33.306Z] info: => page.screenshot started
+[2024-01-13T03:07:33.309Z] info: <= page.screenshot failed

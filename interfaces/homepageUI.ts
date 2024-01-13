@@ -14,7 +14,11 @@ hplTestCase : "(//a[@href='/test_cases'])[1]",
 txtSubscription : "#susbscribe_email",
 btnSubscription : "#subscribe",
 messageSendSubscriptionSuccess : '//div[@class="alert-success alert"]',
-hplProduct : "//a[@href='/view_cart]",
+hplProduct : "//a[@href='/view_cart']",
+lblSubscription : '//div[@class="col-sm-3 col-sm-offset-1"]//h2',
+btnScrollUp : '//a[@href="#top"]',
+lblHeader : '//div[@id="slider-carousel"]//h2',
+lblFeatureItem : '//div[@class="features_items"]//h2',
 }
 
 import randomstring from 'randomstring';
@@ -31,5 +35,7 @@ export const variableHomePage = {
     titleSubscription : "Subscription",
     messageSendSubscriptionSuccess : "You have been successfully subscribed!",
     urlTestCase : "https://automationexercise.com/test_cases",
+    lblSubscription : "Subscription",
+    lblHeader : "Full-Fledged practice website for Automation Engineers",
         
 }

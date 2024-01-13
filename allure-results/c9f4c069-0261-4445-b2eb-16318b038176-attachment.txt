@@ -1,0 +1,25 @@
+[2024-01-13T03:07:27.104Z] info: => browser.newContext started
+[2024-01-13T03:07:27.114Z] info: <= browser.newContext succeeded
+[2024-01-13T03:07:27.118Z] info: => browserContext.newPage started
+[2024-01-13T03:07:27.250Z] info: <= browserContext.newPage succeeded
+[2024-01-13T03:07:27.254Z] info: => page.goto started
+[2024-01-13T03:07:31.258Z] info: <= page.goto succeeded
+[2024-01-13T03:07:31.258Z] info: Navigate to url http://automationexercise.com
+[2024-01-13T03:07:31.260Z] info: => page.waitForLoadState started
+[2024-01-13T03:07:31.264Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T03:07:31.265Z] info: => page.title started
+[2024-01-13T03:07:31.276Z] info: <= page.title succeeded
+[2024-01-13T03:07:31.279Z] info: Verify that home page is visible successfully
+[2024-01-13T03:07:31.289Z] info: => expect.toBeVisible started
+[2024-01-13T03:07:31.289Z] info: Verify text 'SUBSCRIPTION'
+[2024-01-13T03:07:31.290Z] info: => locator.fill started
+[2024-01-13T03:07:31.340Z] info: <= expect.toBeVisible succeeded
+[2024-01-13T03:07:31.365Z] info: <= locator.fill succeeded
+[2024-01-13T03:07:31.366Z] info: => locator.click started
+[2024-01-13T03:07:31.609Z] info: <= locator.click succeeded
+[2024-01-13T03:07:31.609Z] info: Enter email address in input and click arrow button
+[2024-01-13T03:07:31.611Z] info: => locator.textContent started
+[2024-01-13T03:07:31.662Z] info: <= locator.textContent succeeded
+[2024-01-13T03:07:31.662Z] info:  Verify success message 'You have been successfully subscribed!' is visible
+[2024-01-13T03:07:31.664Z] info: => page.screenshot started
+[2024-01-13T03:07:31.893Z] info: <= page.screenshot succeeded

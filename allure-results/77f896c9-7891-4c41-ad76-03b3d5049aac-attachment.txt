@@ -1,0 +1,37 @@
+[2024-01-12T15:13:15.886Z] info: => browser.newContext started
+[2024-01-12T15:13:15.912Z] info: <= browser.newContext succeeded
+[2024-01-12T15:13:15.919Z] info: => browserContext.newPage started
+[2024-01-12T15:13:16.143Z] info: <= browserContext.newPage succeeded
+[2024-01-12T15:13:16.160Z] info: => page.goto started
+[2024-01-12T15:13:22.300Z] info: <= page.goto succeeded
+[2024-01-12T15:13:22.301Z] info: Navigate to url http://automationexercise.com
+[2024-01-12T15:13:22.303Z] info: => page.waitForLoadState started
+[2024-01-12T15:13:22.317Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T15:13:22.320Z] info: => page.title started
+[2024-01-12T15:13:22.335Z] info: <= page.title succeeded
+[2024-01-12T15:13:22.338Z] info: Verify that home page is visible successfully
+[2024-01-12T15:13:22.347Z] info: => locator.click started
+[2024-01-12T15:13:22.820Z] info: <= locator.click succeeded
+[2024-01-12T15:13:22.821Z] info: Click 'Products' button
+[2024-01-12T15:13:22.822Z] info: => page.waitForLoadState started
+[2024-01-12T15:13:22.907Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T15:13:22.909Z] info: => locator.hover started
+[2024-01-12T15:13:23.044Z] info: <= locator.hover succeeded
+[2024-01-12T15:13:23.046Z] info: => locator.click started
+[2024-01-12T15:13:23.582Z] info: <= locator.click succeeded
+[2024-01-12T15:13:23.582Z] info: Hover over first product and click 'Add to cart'
+[2024-01-12T15:13:23.582Z] info: => locator.click started
+[2024-01-12T15:13:24.091Z] info: <= locator.click succeeded
+[2024-01-12T15:13:24.092Z] info: Click 'Continue Shopping' button
+[2024-01-12T15:13:24.094Z] info: => locator.hover started
+[2024-01-12T15:13:24.197Z] info: <= locator.hover succeeded
+[2024-01-12T15:13:24.198Z] info: => locator.click started
+[2024-01-12T15:13:24.739Z] info: <= locator.click succeeded
+[2024-01-12T15:13:24.739Z] info: Hover over second product and click 'Add to cart'
+[2024-01-12T15:13:24.742Z] info: => locator.click started
+[2024-01-12T15:13:25.482Z] info: <= locator.click succeeded
+[2024-01-12T15:13:25.483Z] info: Click 'View Cart' button
+[2024-01-12T15:13:25.486Z] info: => locator.textContent started
+[2024-01-12T15:14:05.854Z] info: => page.screenshot started
+[2024-01-12T15:14:06.060Z] info: <= page.screenshot succeeded
+[2024-01-12T15:14:06.092Z] info: <= locator.textContent failed

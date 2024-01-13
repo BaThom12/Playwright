@@ -1,0 +1,14 @@
+[2024-01-12T12:54:31.844Z] info: => browser.newContext started
+[2024-01-12T12:54:31.863Z] info: <= browser.newContext succeeded
+[2024-01-12T12:54:31.870Z] info: => browserContext.newPage started
+[2024-01-12T12:54:32.058Z] info: <= browserContext.newPage succeeded
+[2024-01-12T12:54:32.071Z] info: => page.goto started
+[2024-01-12T12:54:35.716Z] info: <= page.goto succeeded
+[2024-01-12T12:54:35.718Z] info: Navigate to url http://automationexercise.com
+[2024-01-12T12:54:35.721Z] info: => page.waitForLoadState started
+[2024-01-12T12:54:35.736Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T12:54:35.740Z] info: => page.title started
+[2024-01-12T12:54:35.762Z] info: <= page.title succeeded
+[2024-01-12T12:54:35.771Z] info: Verify that home page is visible successfully
+[2024-01-12T12:54:35.780Z] info: => page.screenshot started
+[2024-01-12T12:54:36.023Z] info: <= page.screenshot succeeded

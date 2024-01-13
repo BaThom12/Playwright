@@ -10,25 +10,35 @@ test.beforeEach(async ({ page }) => {
     await homePage.verifyTitle();
 });
 
-test('Contact Us Form', async ({ page }) => {
-    await allure.story("Contact Us Form");
+// test('Contact Us Form', async ({ page }) => {
+//     await allure.story("Contact Us Form");
+//     const homePage = new HomePage(page);
+//     await homePage.sendContactUs();
+// });
+// test('Verify Test Cases Page', async ({ page }) => {
+//     await allure.story("Verify Test Cases Page");
+//     const homePage = new HomePage(page);
+//     await homePage.verifyTestCasePages();
+// });
+// test('Verify Subscription in home page', async ({ page }) => {
+//     await allure.story("Verify Subscription in home page");
+//     const homePage = new HomePage(page);
+//     await homePage.verifySubscription('homepage');
+// });
+// test('Verify Subscription in Cart page', async ({ page }) => {
+//     await allure.story("Verify Subscription in Cart page");
+//     const homePage = new HomePage(page);
+//     await homePage.verifySubscription('cart');
+// });
+test('Verify Scroll Up using Arrow button and Scroll Down functionality', async ({ page }) => {
+    await allure.story("Verify Scroll Up using Arrow button and Scroll Down functionality");
     const homePage = new HomePage(page);
-    await homePage.sendContactUs();
+    await homePage.verifyScrollUp();
 });
-test('Verify Test Cases Page', async ({ page }) => {
-    await allure.story("Verify Test Cases Page");
+test('Verify Scroll Up without Arrow button and Scroll Down functionality', async ({ page }) => {
+    await allure.story("Verify Scroll Up without Arrow button and Scroll Down functionality");
     const homePage = new HomePage(page);
-    await homePage.verifyTestCasePages();
-});
-test('Verify Subscription in home page', async ({ page }) => {
-    await allure.story("Verify Subscription in home page");
-    const homePage = new HomePage(page);
-    await homePage.verifySubscription('homepage');
-});
-test('Verify Subscription in Cart page', async ({ page }) => {
-    await allure.story("Verify Subscription in Cart page");
-    const homePage = new HomePage(page);
-    await homePage.verifySubscription('cart');
+    await homePage.verifyScrollUpWithoutArrow();
 });
 
 

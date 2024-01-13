@@ -1,0 +1,21 @@
+[2024-01-13T03:25:44.492Z] info: => browser.newContext started
+[2024-01-13T03:25:44.506Z] info: <= browser.newContext succeeded
+[2024-01-13T03:25:44.512Z] info: => browserContext.newPage started
+[2024-01-13T03:25:44.747Z] info: <= browserContext.newPage succeeded
+[2024-01-13T03:25:44.753Z] info: => page.goto started
+[2024-01-13T03:25:49.261Z] info: <= page.goto succeeded
+[2024-01-13T03:25:49.262Z] info: Navigate to url http://automationexercise.com
+[2024-01-13T03:25:49.265Z] info: => page.waitForLoadState started
+[2024-01-13T03:25:49.280Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T03:25:49.283Z] info: => page.title started
+[2024-01-13T03:25:49.295Z] info: <= page.title succeeded
+[2024-01-13T03:25:49.297Z] info: Verify that home page is visible successfully
+[2024-01-13T03:25:49.302Z] info: => locator.textContent started
+[2024-01-13T03:25:49.327Z] info: <= locator.textContent succeeded
+[2024-01-13T03:25:49.327Z] info:  Verify 'SUBSCRIPTION' is visible
+[2024-01-13T03:25:49.328Z] info: => locator.click started
+[2024-01-13T03:25:49.405Z] info: <= locator.click succeeded
+[2024-01-13T03:25:49.406Z] info: => locator.click started
+[2024-01-13T03:25:50.399Z] info: <= locator.click failed
+[2024-01-13T03:25:50.401Z] info: => page.screenshot started
+[2024-01-13T03:25:50.562Z] info: <= page.screenshot succeeded

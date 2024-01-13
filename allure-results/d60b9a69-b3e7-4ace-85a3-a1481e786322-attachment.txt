@@ -1,0 +1,148 @@
+[2024-01-12T13:18:37.248Z] info: => browser.newContext started
+[2024-01-12T13:18:37.279Z] info: <= browser.newContext succeeded
+[2024-01-12T13:18:37.288Z] info: => browserContext.newPage started
+[2024-01-12T13:18:37.483Z] info: <= browserContext.newPage succeeded
+[2024-01-12T13:18:37.500Z] info: => page.goto started
+[2024-01-12T13:18:42.904Z] info: <= page.goto succeeded
+[2024-01-12T13:18:42.905Z] info: Navigate to url http://automationexercise.com
+[2024-01-12T13:18:42.909Z] info: => page.waitForLoadState started
+[2024-01-12T13:18:42.917Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T13:18:42.919Z] info: => page.title started
+[2024-01-12T13:18:42.940Z] info: <= page.title succeeded
+[2024-01-12T13:18:42.951Z] info: Verify that home page is visible successfully
+[2024-01-12T13:18:42.963Z] info: => locator.click started
+[2024-01-12T13:18:43.979Z] info: <= locator.click succeeded
+[2024-01-12T13:18:43.980Z] info: Click on Signup / Login button
+[2024-01-12T13:18:43.981Z] info: => page.waitForLoadState started
+[2024-01-12T13:18:44.101Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T13:18:44.108Z] info: => expect.toBeVisible started
+[2024-01-12T13:18:44.109Z] info: Verify New User Signup! is visible
+[2024-01-12T13:18:44.111Z] info: => locator.fill started
+[2024-01-12T13:18:44.140Z] info: <= expect.toBeVisible succeeded
+[2024-01-12T13:18:44.179Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:44.180Z] info: Enter name: 7gZsWbNBjmD6vI7
+[2024-01-12T13:18:44.181Z] info: => locator.fill started
+[2024-01-12T13:18:44.224Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:44.226Z] info: Enter email: 3rYfr1P557@gmail.com
+[2024-01-12T13:18:44.227Z] info: => locator.click started
+[2024-01-12T13:18:44.656Z] info: <= locator.click succeeded
+[2024-01-12T13:18:44.657Z] info: Click on Signup button
+[2024-01-12T13:18:44.660Z] info: Verify that ENTER ACCOUNT INFORMATION is visible
+[2024-01-12T13:18:44.662Z] info: => page.waitForLoadState started
+[2024-01-12T13:18:44.671Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T13:18:44.674Z] info: => locator.click started
+[2024-01-12T13:18:44.769Z] info: <= locator.click succeeded
+[2024-01-12T13:18:44.770Z] info: => locator.fill started
+[2024-01-12T13:18:44.817Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:44.817Z] info: Enter Password: BAw4VUM455
+[2024-01-12T13:18:44.819Z] info: => locator.selectOption started
+[2024-01-12T13:18:44.858Z] info: <= locator.selectOption succeeded
+[2024-01-12T13:18:44.860Z] info: => locator.selectOption started
+[2024-01-12T13:18:44.886Z] info: <= locator.selectOption succeeded
+[2024-01-12T13:18:44.889Z] info: => locator.selectOption started
+[2024-01-12T13:18:44.920Z] info: <= locator.selectOption succeeded
+[2024-01-12T13:18:44.921Z] info: Enter Password: 11/3/1995
+[2024-01-12T13:18:44.925Z] info: => locator.check started
+[2024-01-12T13:18:45.096Z] info: <= locator.check succeeded
+[2024-01-12T13:18:45.097Z] info: Select checkbox Sign up for our newsletter!
+[2024-01-12T13:18:45.099Z] info: => locator.check started
+[2024-01-12T13:18:45.168Z] info: <= locator.check succeeded
+[2024-01-12T13:18:45.168Z] info: Select checkbox Receive special offers from our partners!
+[2024-01-12T13:18:45.170Z] info: => locator.fill started
+[2024-01-12T13:18:45.211Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.211Z] info: Enter First name: 4hFa4w3Pom
+[2024-01-12T13:18:45.213Z] info: => locator.fill started
+[2024-01-12T13:18:45.289Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.289Z] info: Enter Last name: sAwMK8dxIy
+[2024-01-12T13:18:45.291Z] info: => locator.fill started
+[2024-01-12T13:18:45.346Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.346Z] info: Enter Company: VMO company
+[2024-01-12T13:18:45.348Z] info: => locator.fill started
+[2024-01-12T13:18:45.379Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.380Z] info: => locator.fill started
+[2024-01-12T13:18:45.417Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.419Z] info: => locator.selectOption started
+[2024-01-12T13:18:45.441Z] info: <= locator.selectOption succeeded
+[2024-01-12T13:18:45.444Z] info: => locator.fill started
+[2024-01-12T13:18:45.483Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.484Z] info: => locator.fill started
+[2024-01-12T13:18:45.529Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.531Z] info: => locator.fill started
+[2024-01-12T13:18:45.580Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.581Z] info: => locator.fill started
+[2024-01-12T13:18:45.619Z] info: <= locator.fill succeeded
+[2024-01-12T13:18:45.619Z] info: Enter Address
+[2024-01-12T13:18:45.622Z] info: => locator.click started
+[2024-01-12T13:18:46.323Z] info: <= locator.click succeeded
+[2024-01-12T13:18:46.323Z] info: Click Create Account button
+[2024-01-12T13:18:46.328Z] info: => expect.toBeVisible started
+[2024-01-12T13:18:46.330Z] info: => locator.click started
+[2024-01-12T13:18:46.401Z] info: <= expect.toBeVisible succeeded
+[2024-01-12T13:18:46.809Z] info: <= locator.click succeeded
+[2024-01-12T13:18:46.809Z] info: Click Continue button
+[2024-01-12T13:18:46.813Z] info: => expect.toBeVisible started
+[2024-01-12T13:18:46.817Z] info: => expect.toBeVisible started
+[2024-01-12T13:18:46.818Z] info: Verify that Logged in as username is visible
+[2024-01-12T13:18:46.827Z] info: => locator.textContent started
+[2024-01-12T13:18:46.922Z] info: <= expect.toBeVisible succeeded
+[2024-01-12T13:18:46.934Z] info: <= expect.toBeVisible succeeded
+[2024-01-12T13:18:46.936Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:46.938Z] info: => locator.textContent started
+[2024-01-12T13:18:46.946Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:46.947Z] info: => locator.textContent started
+[2024-01-12T13:18:46.953Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:46.955Z] info: => locator.textContent started
+[2024-01-12T13:18:46.963Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:46.965Z] info: => locator.click started
+[2024-01-12T13:18:47.341Z] info: <= locator.click succeeded
+[2024-01-12T13:18:47.342Z] info: Click 'Products' button
+[2024-01-12T13:18:47.343Z] info: => page.waitForLoadState started
+[2024-01-12T13:18:47.473Z] info: <= page.waitForLoadState succeeded
+[2024-01-12T13:18:47.476Z] info: => locator.hover started
+[2024-01-12T13:18:47.561Z] info: <= locator.hover succeeded
+[2024-01-12T13:18:47.562Z] info: => locator.click started
+[2024-01-12T13:18:48.120Z] info: <= locator.click succeeded
+[2024-01-12T13:18:48.120Z] info: Hover over first product and click 'Add to cart'
+[2024-01-12T13:18:48.122Z] info: => locator.click started
+[2024-01-12T13:18:53.084Z] info: <= locator.click succeeded
+[2024-01-12T13:18:53.084Z] info: Click 'Continue Shopping' button
+[2024-01-12T13:18:53.086Z] info: => locator.hover started
+[2024-01-12T13:18:53.144Z] info: <= locator.hover succeeded
+[2024-01-12T13:18:53.145Z] info: => locator.click started
+[2024-01-12T13:18:53.682Z] info: <= locator.click succeeded
+[2024-01-12T13:18:53.682Z] info: Hover over second product and click 'Add to cart'
+[2024-01-12T13:18:53.684Z] info: => locator.click started
+[2024-01-12T13:18:54.414Z] info: <= locator.click succeeded
+[2024-01-12T13:18:54.415Z] info: Click 'View Cart' button
+[2024-01-12T13:18:54.416Z] info: => locator.textContent started
+[2024-01-12T13:18:54.477Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.479Z] info: => locator.textContent started
+[2024-01-12T13:18:54.488Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.489Z] info: => locator.textContent started
+[2024-01-12T13:18:54.496Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.498Z] info: => locator.textContent started
+[2024-01-12T13:18:54.505Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.508Z] info: => locator.textContent started
+[2024-01-12T13:18:54.515Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.517Z] info: => locator.textContent started
+[2024-01-12T13:18:54.526Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.528Z] info: => locator.textContent started
+[2024-01-12T13:18:54.534Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.535Z] info: => locator.textContent started
+[2024-01-12T13:18:54.542Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.543Z] info: Verify both products are added to Cart
+[2024-01-12T13:18:54.545Z] info: Verify their prices, quantity and total price
+[2024-01-12T13:18:54.549Z] info: => locator.click started
+[2024-01-12T13:18:54.933Z] info: <= locator.click succeeded
+[2024-01-12T13:18:54.934Z] info: Click Proceed To Checkout
+[2024-01-12T13:18:54.935Z] info: => locator.textContent started
+[2024-01-12T13:18:54.985Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.987Z] info: => locator.textContent started
+[2024-01-12T13:18:54.994Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:54.996Z] info: => locator.textContent started
+[2024-01-12T13:18:55.004Z] info: <= locator.textContent succeeded
+[2024-01-12T13:18:55.005Z] info: Verify that the delivery address is same address filled at the time registration of account
+[2024-01-12T13:18:55.007Z] info: => locator.textContent started
+[2024-01-12T13:18:55.023Z] info: <= locator.textContent failed
+[2024-01-12T13:18:55.033Z] info: => page.screenshot started
+[2024-01-12T13:18:55.907Z] info: <= page.screenshot succeeded

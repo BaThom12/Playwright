@@ -1,0 +1,54 @@
+[2024-01-13T03:07:14.336Z] info: => browser.newContext started
+[2024-01-13T03:07:14.358Z] info: <= browser.newContext succeeded
+[2024-01-13T03:07:14.367Z] info: => browserContext.newPage started
+[2024-01-13T03:07:14.593Z] info: <= browserContext.newPage succeeded
+[2024-01-13T03:07:14.607Z] info: => page.goto started
+[2024-01-13T03:07:17.827Z] info: <= page.goto succeeded
+[2024-01-13T03:07:17.829Z] info: Navigate to url http://automationexercise.com
+[2024-01-13T03:07:17.832Z] info: => page.waitForLoadState started
+[2024-01-13T03:07:17.845Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T03:07:17.849Z] info: => page.title started
+[2024-01-13T03:07:17.874Z] info: <= page.title succeeded
+[2024-01-13T03:07:17.881Z] info: Verify that home page is visible successfully
+[2024-01-13T03:07:17.886Z] info: => locator.click started
+[2024-01-13T03:07:18.357Z] info: <= locator.click succeeded
+[2024-01-13T03:07:18.358Z] info: Click on 'Contact Us' button
+[2024-01-13T03:07:18.369Z] info: => expect.toBeVisible started
+[2024-01-13T03:07:18.372Z] info: => locator.fill started
+[2024-01-13T03:07:18.438Z] info: <= expect.toBeVisible succeeded
+[2024-01-13T03:07:18.474Z] info: <= locator.fill succeeded
+[2024-01-13T03:07:18.475Z] info: Enter name: f4gkhIIhfE6V9kA
+[2024-01-13T03:07:18.476Z] info: => locator.fill started
+[2024-01-13T03:07:18.518Z] info: <= locator.fill succeeded
+[2024-01-13T03:07:18.518Z] info: Enter mail: GSP6ZAQM25623@gmail.com
+[2024-01-13T03:07:18.519Z] info: => locator.fill started
+[2024-01-13T03:07:18.530Z] info: <= locator.fill succeeded
+[2024-01-13T03:07:18.531Z] info: Enter subject: test send contact us
+[2024-01-13T03:07:18.532Z] info: => locator.fill started
+[2024-01-13T03:07:18.545Z] info: <= locator.fill succeeded
+[2024-01-13T03:07:18.545Z] info: Enter your message: Got a question? Looking for info? Need to talk with customer service?
+[2024-01-13T03:07:18.546Z] info: => page.waitForEvent started
+[2024-01-13T03:07:18.551Z] info: => page.click started
+[2024-01-13T03:07:18.672Z] info: <= page.click succeeded
+[2024-01-13T03:07:18.679Z] info: <= page.waitForEvent succeeded
+[2024-01-13T03:07:18.683Z] info: => fileChooser.setFiles started
+[2024-01-13T03:07:18.687Z] info: => locator.click started
+[2024-01-13T03:07:18.723Z] info: <= fileChooser.setFiles succeeded
+[2024-01-13T03:07:18.725Z] info: =>  started
+[2024-01-13T03:07:18.795Z] info: <=  succeeded
+[2024-01-13T03:07:19.178Z] info: <= locator.click succeeded
+[2024-01-13T03:07:19.179Z] info: Click 'Submit' button
+[2024-01-13T03:07:19.181Z] info: => page.waitForLoadState started
+[2024-01-13T03:07:19.285Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T03:07:19.287Z] info: Click OK button
+[2024-01-13T03:07:19.290Z] info: => expect.toBeVisible started
+[2024-01-13T03:07:19.290Z] info: Verify success message 'Success! Your details have been submitted successfully.' is visible
+[2024-01-13T03:07:19.292Z] info: => locator.click started
+[2024-01-13T03:07:19.722Z] info: <= locator.click succeeded
+[2024-01-13T03:07:19.722Z] info: Click 'Home' button
+[2024-01-13T03:07:19.724Z] info: => page.title started
+[2024-01-13T03:07:19.876Z] info: <= page.title succeeded
+[2024-01-13T03:07:19.879Z] info: Verify that landed to home page successfully
+[2024-01-13T03:07:19.886Z] info: => page.screenshot started
+[2024-01-13T03:07:20.231Z] info: <= page.screenshot succeeded
+[2024-01-13T03:07:20.257Z] info: <= expect.toBeVisible succeeded

@@ -1,0 +1,25 @@
+[2024-01-13T03:27:07.886Z] info: => browser.newContext started
+[2024-01-13T03:27:07.932Z] info: <= browser.newContext succeeded
+[2024-01-13T03:27:07.937Z] info: => browserContext.newPage started
+[2024-01-13T03:27:08.152Z] info: <= browserContext.newPage succeeded
+[2024-01-13T03:27:08.156Z] info: => page.goto started
+[2024-01-13T03:27:11.585Z] info: <= page.goto succeeded
+[2024-01-13T03:27:11.585Z] info: Navigate to url http://automationexercise.com
+[2024-01-13T03:27:11.588Z] info: => page.waitForLoadState started
+[2024-01-13T03:27:11.604Z] info: <= page.waitForLoadState succeeded
+[2024-01-13T03:27:11.606Z] info: => page.title started
+[2024-01-13T03:27:11.616Z] info: <= page.title succeeded
+[2024-01-13T03:27:11.619Z] info: Verify that home page is visible successfully
+[2024-01-13T03:27:11.621Z] info: => locator.textContent started
+[2024-01-13T03:27:11.653Z] info: <= locator.textContent succeeded
+[2024-01-13T03:27:11.654Z] info:  Verify 'SUBSCRIPTION' is visible
+[2024-01-13T03:27:11.654Z] info: => locator.click started
+[2024-01-13T03:27:11.774Z] info: <= locator.click succeeded
+[2024-01-13T03:27:11.775Z] info: => locator.click started
+[2024-01-13T03:27:11.850Z] info: <= locator.click succeeded
+[2024-01-13T03:27:11.851Z] info: Scroll up page to top
+[2024-01-13T03:27:11.852Z] info: => locator.textContent started
+[2024-01-13T03:27:11.859Z] info: <= locator.textContent succeeded
+[2024-01-13T03:27:11.860Z] info:  Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
+[2024-01-13T03:27:11.863Z] info: => page.screenshot started
+[2024-01-13T03:27:12.099Z] info: <= page.screenshot succeeded

@@ -83,6 +83,30 @@ export class HomePage extends PageBase {
         expect(message==variableHomePage.messageSendSubscriptionSuccess);
         this.logger.info(" Verify success message 'You have been successfully subscribed!' is visible");
     }
+    async verifyScrollUp() {
+        const subscription = await this.page.locator(elementLocatorHomePage.lblSubscription).textContent();
+        expect(subscription==variableHomePage.lblSubscription);
+        this.logger.info(" Verify 'SUBSCRIPTION' is visible");
+        await this.page.locator(elementLocatorHomePage.lblSubscription).click();
+        await this.page.locator(elementLocatorHomePage.btnScrollUp).click();
+        this.logger.info("Click on arrow at bottom right side to move upward");
+        const header = await this.page.locator(elementLocatorHomePage.lblHeader).first().textContent();
+        expect(subscription==variableHomePage.lblHeader);
+        this.logger.info(" Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen");
+
+        }
+    async verifyScrollUpWithoutArrow() {
+        const subscription = await this.page.locator(elementLocatorHomePage.lblSubscription).textContent();
+        expect(subscription==variableHomePage.lblSubscription);
+        this.logger.info(" Verify 'SUBSCRIPTION' is visible");
+        await this.page.locator(elementLocatorHomePage.lblSubscription).click();
+        await this.page.locator(elementLocatorHomePage.lblFeatureItem).first().click();
+        this.logger.info("Scroll up page to top");
+        const header = await this.page.locator(elementLocatorHomePage.lblHeader).first().textContent();
+        expect(subscription==variableHomePage.lblHeader);
+        this.logger.info(" Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen");
+
+        }
     
    
 }

@@ -70,7 +70,7 @@ export class Product extends PageBase {
         await this.page.locator(elementLocatorProduct.product).hover();
         await this.page.locator(elementLocatorProduct.btnAddToCart).click();
         this.logger.info("Hover over first product and click 'Add to cart'");
-        await this.page.getByText(elementLocatorProduct.btnContinueShopping).click();
+        await this.page.locator(elementLocatorProduct.btnContinueShopping).click();
         this.logger.info("Click 'Continue Shopping' button");
         await this.page.locator(elementLocatorProduct.product.replace('2', '3')).hover();
         await this.page.locator(elementLocatorProduct.btnAddToCart.replace('2', '4')).click();
@@ -95,8 +95,8 @@ export class Product extends PageBase {
         expect(priceProduct1 == totalPriceProduct1InCart);
         expect(priceProduct2 == totalPriceProduct2InCart);
         this.logger.info("Verify their prices, quantity and total price");
-
     }
+    
     async verifyQuantityProductInCart() {
         await this.page.locator(elementLocatorProduct.btnViewProduct).click();
         this.logger.info("Click 'View Product' for any product on home page");
